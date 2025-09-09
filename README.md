@@ -28,7 +28,7 @@ TODO: Write history
 
 ## Credits
 - Armstrong, Amy
--Muncaster, Josephine
+- Muncaster, Josephine
 - Seif, Laila
 - zakia sultana
 
