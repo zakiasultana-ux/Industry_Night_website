@@ -2,13 +2,13 @@
 Industry Night Group
 
 ## Subject
-- Armstrong, Amy: 
-- Muncaster, Josephine: 
-- Seif, Laila: 
-- zakia sultana: A Developer
+- Armstrong, Amy: Designer
+- Muncaster, Josephine: Motion/Videographer
+- Seif, Laila: Project Manager
+- Sultana, Zakia: Developer
 
 ## Project Overview
- website to provide a platform for fellow students to display their skills, projects, and achievements to potential employers, industry professionals, and peers attending the event. You will also incorporate information about the Interactive Media Design program, client projects, testimonials, and details about the Industry Night event.
+ website to provide a platform for fellow level 4 IDP3 students to display their skills, projects, and achievements to potential employers, industry professionals, and peers attending the event. You will also incorporate information about the Interactive Media Design program, client projects, testimonials, and details about the Industry Night event.
 
 ## Installation
 no installation required
@@ -30,7 +30,7 @@ TODO: Write history
 - Armstrong, Amy
 - Muncaster, Josephine
 - Seif, Laila
-- zakia sultana
+- Sultana, Zakia
 
 ## License
 See the license file.
