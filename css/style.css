@@ -18,3 +18,11 @@ ___________________________________________ */
    01-d. Tablet
    01-e. Small Desktop & Up 
 */
+
+/* css variables */
+:root {
+    --primary-color: #3490dc;
+    --secondary-color: #ffed4a;
+    --montserrat-font: 'Montserrat', sans-serif;
+    --patterns-font: 'Patterns', sans-serif;
+}
