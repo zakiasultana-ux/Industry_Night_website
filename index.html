@@ -1,58 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Industry Night Site</title>
-        <!-- tailwind -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <!-- fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.cdnfonts.com/css/patterns" rel="stylesheet">
-        <!-- style sheet  -->
-        <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Night Site</title>
 
-    </head>
-    <body>
-        
-        <header>
-            <h1 class="hidden">Welcome to the Industry Night Site</h1>
-            <nav>
-                <h2 class="hidden">Navigation bar</h2>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#project-exhibit">Project Exhibit</a></li>
-                    <li><a href="#program">Program</a></li>
-                    <li><a href="#portfolios">Portfolios</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-        <main>
-            <section id="home">
-                <h2>Home</h2>
-                <p>Welcome to the Industry Night event! Explore projects, meet professionals, and showcase your portfolio.</p>
-            </section>
-            <section id="project-exhibit">
-                <h2>Project Exhibit</h2>
-                <p>Discover innovative projects from various industries. Engage with creators and learn about their work.</p>
-            </section>
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+   >
+    <link href="https://fonts.cdnfonts.com/css/patterns" rel="stylesheet">
 
-            <section id="program">
-                <h2>Program</h2>
-                <p>Join us for a series of talks and workshops led by industry experts. Enhance your skills and knowledge.</p>
-            </section>
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+   >
 
-            <section id="portfolios">
-                <h2>Portfolios</h2>
-                <p>Showcase your work and connect with potential employers. Get feedback from professionals in your field.</p>
-            </section>
-        </main>
+    <!-- style sheet  -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-        <footer>
-            <p>&copy; 2024 Industry Night. All rights reserved.</p>
-        </footer>
+  <body>
+    <!-- header section -->
+    <header>
+      <h1 class="hidden">Industry Night Event</h1>
 
-        <script src="js/script.js"></script>
-    </body>
+      <!-- Logo Site Title -->
+      <div>
+        <a href="#home">
+          <img src="images/logo.png" alt="Industry Night Logo">
+          <span class="hidden">Industry Night</span>
+        </a>
+      </div>
+
+      <!-- Hamburger Button -->
+      <button id="menu-btn" aria-controls="main-nav" aria-expanded="false">
+        <!-- Hamburger Icon -->
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+          </path>
+        </svg>
+      </button>
+
+      <!-- Navigation -->
+      <nav id="main-nav" aria-label="Main navigation">
+        <h2 class="hidden">Navigation bar</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#event">Event</a></li>
+          <li><a href="#portfolios">Portfolios</a></li>
+          <li><a href="#project-exhibit">Project Exhibit</a></li>
+        </ul>
+      </nav>
+      <a href="#">fanshawe.ca</a>
+    </header>
+
+    <main>
+      <!-- Home Section -->
+      <section id="home">
+        <div>
+          <!-- Hero Text -->
+          <div>
+            <h2>Industry Night 2025</h2>
+            <p>
+              Celebrate creativity, innovation, and future careers. Join us for an evening of networking, project showcases, and inspiration.
+            </p>
+
+            <!-- Call to Action Buttons -->
+            <div>
+              <a href="#project-exhibit">Explore Projects</a>
+              <a href="#program">View Program</a>
+            </div>
+          </div>
+
+          <!-- Hero Image -->
+          <div>
+            <img src="images/hero-illustration.png" alt="People networking at Industry Night event">
+          </div>
+        </div>
+      </section>
+
+      <!-- Event Section -->
+      <section id="event">
+        <div>
+          <!-- Video -->
+          <div>
+            <video controls>
+              <source src="videos/industry-night.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- Text -->
+          <div>
+            <img src="images/date.png" alt="Date Icon">
+            <h2>Date</h2>
+            <h3>April 24th, 2025</h3>
+            <p>Thursday (4Pm - 9Pm)</p>
+          </div>
+          <div>
+            <img src="images/place.png" alt="Place Icon">
+            <h2>Place</h2>
+            <h3>137 Dundas St.</h3>
+            <p>Fanshawe College, Downtown Campus London, ON N6A 1E9</p>
+          </div>
+          <div>
+            <p>save the date!</p>
+          </div>
+          <div>
+            <img src="images/itinerary.png" alt="Itinerary Icon">
+            <h2>Itinerary</h2>
+            <h3>4Pm - 6Pm</h3>
+            <p>Spotlight Presentations @ The Good Foundation Inc. Theatre</p>
+            <h3>6Pm - 7:30Pm</h3>
+            <p>Student Portfolio Viewing @ Level 4 Labs</p>
+            <h3>7:30Pm - 9Pm</h3>
+            <p>Food & Drinks, Mingle & Networking @ The Chef's Table</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h2>
+              Name of Client
+              <br>
+              <span>small subtitle</span>
+            </h2>
+            <p>Brief description of the client and their role in the event.</p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <img src="images/client-logo.png" alt="Client Logo">
+            <img src="images/client-image.png" alt="Client Image">
+            <img src="images/client-additional.png" alt="Client Additional Image">
+            <img src="images/client-placeholder.png" alt="Client Placeholder Image">
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Exhibit Section -->
+      <section id="testimonials">
+        <div>
+          <h2>Testimonials</h2>
+          <p>Hear more from the experienced</p>
+
+          <!-- ✅ Slider Container -->
+          <div>
+            <div>
+              <!-- Testimonial -->
+              <div>
+                <div>
+                  <img src="images/testimonial-1.jpg" alt="Portrait of Alex Johnson, Software Engineer">
+                  <blockquote>
+                    "This event was a game-changer for my career. The networking
+                    opportunities were invaluable."
+                  </blockquote>
+                  <h3>
+                    – Alex Johnson <br><span>IDP/UX professor @ Fanshawe Downtown campus</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- ✅ Custom Navigation Buttons -->
+            <div>
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Program Section -->
+      <section id="program">
+        <div>
+          <h2>Interested in this Awesome Program?</h2>
+          <p>
+            Discover the skills and knowledge you need to excel in the industry. Learn from experienced professionals and gain hands-on experience.
+          </p>
+          <a href="#">IDP3 program</a>
+        </div>
+        <div>
+          <img src="images/program-image.png" alt="Students collaborating on a project">
+          <img src="images/program-image-2.png" alt="Students working on a project">
+          <img src="images/program-image-3.png" alt="Students presenting their work">
+        </div>
+        <div>
+          <p>Learn more about the program and how it can benefit you.</p>
+          <p>learn more</p>
+        </div>
+      </section>
+
+      <!-- Portfolios Section -->
+      <section id="portfolios">
+        <h2>Meet the Creators</h2>
+        <p>Designers & Developers of this Website</p>
+        <div>
+          <div>
+            <img src="images/creator-1.jpg" alt="Portrait of Creator 1">
+            <h3>Creator 1</h3>
+            <p>Role: Frontend Developer</p>
+            <a href="#">View Portfolio</a>
+          </div>
+          <div>
+            <img src="images/creator-2.jpg" alt="Portrait of Creator 2">
+            <h3>Creator 2</h3>
+            <p>Role: UX Designer</p>
+            <a href="#">View Portfolio</a>
+          </div>
+          <div>
+            <img src="images/creator-3.jpg" alt="Portrait of Creator 3">
+            <h3>Creator 3</h3>
+            <p>Role: Graphic Designer</p>
+            <a href="#">View Portfolio</a>
+          </div>
+          <div>
+            <img src="images/creator-4.jpg" alt="Portrait of Creator 4">
+            <h3>Creator 4</h3>
+            <p>Role: Backend Developer</p>
+            <a href="#">View Portfolio</a>
+          </div>
+        </div>
+        <div>
+          <h2>The Portfolios & More</h2>
+          <p>
+            Explore the portfolios of our talented creators and see their work in action.
+          </p>
+          <a href="#">View All Portfolios</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section  -->
+    <footer>
+      <div>
+        <p>
+          Fanshawe College, IDP3 <br>
+          &copy; 2026 all rights reserved.
+        </p>
+        <p>
+          137 Dundas St, <br>
+          London, ON, Canada <br>
+          N6A 1G3
+        </p>
+        <a href="#home">home</a>
+        <a href="#portfolios">portfolios & More</a>
+        <a href="https://fanshawe.ca">visit fanshawe.ca</a>
+      </div>
+      <div>
+        <h2>Stay connected</h2>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
