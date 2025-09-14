@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="time" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.34 500.34">
+  <circle cx="250.17" cy="250.17" r="250.17" style="fill: #a53433;"/>
+  <circle cx="250.17" cy="250.17" r="206.92" style="fill: #fff;"/>
+  <g>
+    <rect x="224.65" y="89.4" width="51.04" height="190.14" style="fill: #a53433;"/>
+    <rect x="224.65" y="232.97" width="137.24" height="46.58" style="fill: #a53433;"/>
+  </g>
+</svg>

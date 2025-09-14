@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="calendar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 469.7 470.6">
+  <rect y="36.56" width="469.7" height="434.03" rx="85.85" ry="85.85" style="fill: #a53433;"/>
+  <rect x="42.41" y="125.39" width="384.88" height="301.55" rx="44.28" ry="44.28" style="fill: #fff;"/>
+  <rect x="84" y="0" width="42.02" height="169.73" rx="18.4" ry="18.4" style="fill: #a53433;"/>
+  <rect x="338.58" y="0" width="42.02" height="169.73" rx="18.4" ry="18.4" style="fill: #a53433;"/>
+  <rect x="126.01" y="211.19" width="39.98" height="87.73" style="fill: #a53433;"/>
+  <rect x="298.6" y="211.19" width="39.98" height="87.73" style="fill: #a53433;"/>
+  <rect x="214.86" y="211.19" width="39.98" height="87.73" style="fill: #a53433;"/>
+</svg>
