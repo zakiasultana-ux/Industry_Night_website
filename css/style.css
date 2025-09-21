@@ -80,11 +80,12 @@ body {
 /* 03. Header styles */
 
 header {
-    background-color: var(--dark-red-color);
+    background-color: var(--red-color);
     color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
+    filter: drop-shadow(4px 0px 10px var(--dark-gray-color));
 }
 
 /* 03-a. Logo styles */
@@ -331,7 +332,7 @@ nav li > a:hover::after {
 /* 05-a. vertical line styles */
 
 .vertical-line {
-    border-left: 2px solid var(--red-color);
+    border-left: 2px solid var(--dark-red-color);
     height: 1.5em;
     margin-top: 35px;
     position: absolute;
@@ -379,7 +380,7 @@ nav li > a:hover::after {
 
 .horizontal-line {
     border: none;
-    border-top: 10px solid var(--red-color);
+    border-top: 10px solid var(--dark-red-color);
 }
 
 /* 06. Client section styles */
@@ -539,7 +540,7 @@ nav li > a:hover::after {
     font-weight: bolder;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    color: var(--dark-red-color);
+    color: var(--red-color);
 }
 
 .program-text h2 span {
@@ -665,6 +666,8 @@ nav li > a:hover::after {
 #portfolio, #portfolio1 {
     background-color: white;
     padding: 20px;
+    padding-bottom: 100px;
+    padding-top: 100px;
     text-align: center;
 }
 
