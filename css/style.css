@@ -1,6 +1,6 @@
 /*
 Style Name: Site Build 
-Description: Class File
+Description: Industry Night Website
 Author: Zakia Sultana. 
 Version: 1.0
 Tags: Let's Build Something!
@@ -8,21 +8,801 @@ Tags: Let's Build Something!
 
 /* ___________________________________________
 
-       CSS Guide
+       CSS stylesheet
 ___________________________________________ */
 
-/* 01. CSS Grid
-   01-a. CSS Variables
-   01-b. Mobile
-   01-c. Mobile Landscape
-   01-d. Tablet
-   01-e. Small Desktop & Up 
+/* __________________________________________
+    01. CSS variables
+    02. CSS general styles
+    03. Header styles
+    03-a. Logo styles
+    03-b. Navigation styles
+    03-c. Hamburger button styles
+    03-d. @media queries
+    03-e. menu hover effect
+    04. Hero section styles
+    05. Event section styles
+    05-a. vertical line styles
+    05-b. horizontal line styles
+    06. Client section styles
+    07. Testimonials section styles
+    07-a. slider styles
+    08. program section styles
+    08-a. program text styles
+    09. Creator section styles
+    09-a. creator card styles
+    09-b. creator text style
+    10. portfolios style
+    11. footer style
+
+    **********Portfolio page***************
+
+    01. portfolio style
+    02. portfolio button style
+    03. portfolio student list
+___________________________________________
 */
 
-/* css variables */
+/* 01. CSS variables */
+
 :root {
-    --primary-color: #3490dc;
-    --secondary-color: #ffed4a;
-    --montserrat-font: 'Montserrat', sans-serif;
-    --patterns-font: 'Patterns', sans-serif;
+    --red-color: #e2231a;
+    --dark-red-color: #b3272d;
+    --gray-color: #646469;
+    --dark-gray-color: #231F20;
+    --gotham-font: 'Gotham', sans-serif;
+}
+
+/* 02. CSS general styles */
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--gotham-font);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #f9f9f9;
+    color: var(--dark-gray-color);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* 03. Header styles */
+
+header {
+    background-color: var(--dark-red-color);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* 03-a. Logo styles */
+
+.logo object {
+    height: 40px;
+    width: auto;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+/* 03-b. Navigation styles */
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* 03-c. Hamburger button styles */
+
+#menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#menu-btn img {
+    height: 30px;
+    width: auto;
+}
+
+/* 03-d. @media queries */
+
+@media screen and (max-width: 64em) {
+    nav {
+        display: none;
+    }
+
+    .fanshawe {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    
+    #menu-btn {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+        padding-top: 5px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: larger;
+        transition: all 0.3s ease;
+    }
+    .fanshawe {
+        height: 40px;
+        width: auto;
+        padding-top: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: larger;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+/* 03-e. menu hover effect */
+
+nav li > a {
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+    display: inline-block;
+}
+
+nav li > a::before,
+nav li > a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: all 0.5s;
+}
+
+nav li > a::before {
+  top: 0;
+  left: 0;
+}
+
+nav li > a::after {
+  bottom: 0;
+  right: 0;
+}
+
+nav li > a:hover::before {
+  width: 100%;
+  transition: width 0.25s ease-in-out;
+}
+
+nav li > a:hover::after {
+  width: 100%;
+  transition: width 0.25s ease-in-out 0.25s;
+}
+
+/* 04. Hero section styles  */
+
+#hero {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 3.5em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--dark-red-color);
+    text-shadow: 2px 2px 4px rgba(230, 229, 229, 0.1);
+}
+
+#hero p {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+    color: var(--gray-color);
+}
+
+#hero span {
+    font-weight: bold;
+}
+
+.highlight {
+    color: var(--red-color);
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+/* 05. Event section styles */
+
+#event {
+    padding: 20px;
+    background-color: var(--dark-gray-color);
+    text-align: center;
+}
+
+#event video {
+    width: 200em;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-details {
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.event-details div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+    font-size: 1.25em;
+}
+
+.event-details img {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.event-details h2 {
+    padding-left: 40px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+}
+
+.event-details h3 {
+    color: var(--red-color);
+    margin-top: 10px;
+    font-size: 0.8em;
+    padding-left: 40px;
+}
+
+.event-details p {
+    color: white;
+    margin: 5px 0 0 40px;
+    font-size: 0.4em;
+    font-weight: lighter;
+}
+
+.save-the-date {
+    background-image: url('../images/bar-lg-red.svg');
+    background-blend-mode: color;
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+}
+
+.save-the-date p {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    padding-left: 10px;
+}
+
+/* 05-a. vertical line styles */
+
+.vertical-line {
+    border-left: 2px solid var(--red-color);
+    height: 1.5em;
+    margin-top: 35px;
+    position: absolute;
+    left: 51%;
+    transform: translateX(-50%);
+}
+
+.vertical-line1 {
+    border-left: 2px solid var(--red-color);
+    height: 1.8em;
+    margin-top: 35px;
+    position: absolute;
+    left: 51%;
+    transform: translateX(-50%);
+}
+
+.line {
+    border-left: 2px solid var(--red-color);
+    height: 1.8em;
+    margin-top: 30px;
+    position: absolute;
+    left: 69%;
+    transform: translateX(-50%);
+}
+
+.line1 {
+    border-left: 2px solid var(--red-color);
+    height: 1.2em;
+    margin-top: 110px;
+    position: absolute;
+    left: 69%;
+    transform: translateX(-50%);
+}
+
+.line2 {
+    border-left: 2px solid var(--red-color);
+    height: 1.8em;
+    margin-top: 170px;
+    position: absolute;
+    left: 69%;
+    transform: translateX(-50%);
+}
+
+/* 05-b. horizontal line styles */
+
+.horizontal-line {
+    border: none;
+    border-top: 10px solid var(--red-color);
+}
+
+/* 06. Client section styles */
+
+#client {
+    padding: 50px 20px;
+    background-color: var(--red-color);
+    color: white;
+    text-align: left;
+}
+
+#client h2 {
+    font-size: 2.3em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#client p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#client img {
+    width: 100%;
+    height: 95%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 07. Testimonials section styles */
+
+#testimonials {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: var(--dark-red-color);
+}
+
+#testimonials p {
+    font-size: 1.7em;
+    margin-bottom: 30px;
+    color: var(--dark-gray-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#testimonials img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#testimonials h3 {
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: var(--dark-red-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+#testimonials h3 span {
+    font-size: 1em;
+    color: var(--gray-color);
+    text-transform: none;
+    font-weight: normal;
+}
+
+.testimonial-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+    margin-left: 50px;
+    text-align: center;
+    color: var(--dark-gray-color);
+}
+
+.testimonial-text h4 {
+    font-size: 1.6em;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+/* 07-a. slider styles */
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 120px;
+}
+
+.slider-container i {
+    font-size: 2em;
+    color: var(--dark-red-color);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.slider-container i:hover {
+    color: var(--red-color);
+}
+
+.slider-container p {
+    font-size: 1.2em;
+    color: var(--dark-gray-color);
+    margin: 0 10px;
+    margin-top: 25px;
+}
+
+/* 08. pogram section styles */
+
+#program {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.program-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.program-images img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 08-a. program text styles */
+
+.program-text {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.program-text h2 {
+    font-size: 1.19em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: var(--dark-red-color);
+}
+
+.program-text h2 span {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--dark-red-color);
+    text-shadow: 1px 1px 2px rgba(230, 229, 229, 0.1);
+}
+
+.program-text p {
+    font-size: 1.1em;
+    margin: 40px 0;
+    color: var(--dark-gray-color);
+    line-height: 1.6;
+    text-align: center;
+}
+
+.program-text p span {
+    font-weight: bold;
+    color: var(--red-color);
+}
+
+.program-text a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--red-color);
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.program-text a:hover {
+    background-color: var(--dark-red-color);
+    text-decoration: none;
+}
+
+.program-description p {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.program-description p span {
+    font-weight: bold;
+    color: var(--red-color);
+}
+
+/* 09. Creator section styles */
+
+#creator {
+    background-color: var(--dark-gray-color);
+    padding: 20px;
+    text-align: center;
+    display: block;
+}
+
+#creator h2 {
+    color: white;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+#creator p {
+    color: var(--dark-red-color);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* 09-a. creator card styles */
+
+.creator-box img {
+    background-color: var(--dark-red-color);
+    border-radius: 20px;
+    height: 200px;
+}
+
+/* 09-b. creator text style */
+
+.creator-text {
+    background-image: url('../images/bar-lg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    margin-top: -5px;
+}
+
+.creator-text h3 {
+    color: var(--dark-red-color);
+    font-size: 1.5em;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.creator-text p {
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 1.3em;
+}
+
+.view-portfolio {
+    background-image: url('../images/bar-sm-red.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 82%;
+    margin-top: -22px;
+    padding: 5px;
+    text-align: left;
+}
+
+.view-portfolio a {
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+/* 10. portfolios style */
+
+#portfolio, #portfolio1 {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#portfolio h2, #portfolio1 h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: var(--dark-red-color);
+    text-transform: uppercase;
+}
+
+#portfolio p {
+    color: var(--dark-gray-color);
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+#portfolio a {
+    background-color: var(--red-color);
+    color: white;
+    padding: 15px;
+    font-size: 1.5em;
+    margin-top: 40px;
+    margin-left: 40%;
+    width: 30%;
+    border-radius: 20px;
+}
+
+#portfolio a:hover {
+    background-color: var(--dark-red-color);
+}
+
+/* 11. footer style */
+
+footer {
+    background-color: var(--red-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .fanshawe{
+    font-size: 0.9em;
+    color: var(--gray-color);
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 25%;
+}
+
+footer p {
+    padding: 15px 0px;
+    font-size: 1em;
+}
+
+footer p span {
+    font-weight: bold;
+}
+
+footer h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer a {
+    margin: 10px;
+}
+
+/* **********Portfolio page*************** */
+
+/* 01. portfolio style */
+
+#portfolio1 p {
+    color: var(--dark-gray-color);
+    font-size: 2.5em;
+    line-height: 1;
+}
+
+/* 02. portfolio button style */
+
+.protfolio-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.protfolio-button button {
+    background-color: white;
+    color: var(--gray-color);
+    border: 2px solid var(--dark-gray-color);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0px 10px;
+}
+
+.protfolio-button button:hover{
+    border: 2px solid var(--dark-red-color);
+    color: var(--dark-red-color);
+}
+
+.active {
+    background-color: var(--dark-red-color) !important;
+    border: 2px solid white !important;
+    color: white !important;
+}
+
+/* 03. portfolio student list */
+
+#student-list{
+    background-color: var(--dark-gray-color);
+    padding: 20px;
+}
+
+.student-card h2 {
+    color: var(--red-color);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.student-card p {
+    color: white;
+}
+
+.student-card img {
+    border: 6px solid var(--red-color);
+    border-radius: 20px;
+    height: 200px;
+    background-color: white;
+    margin: 10px;
+}
+
+.student-card a {
+    display: block;
+    background-color: var(--red-color);
+    color: white;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    text-transform: uppercase;
 }
