@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--the site looks amazing so far! There are some alignment issues that I pointed out in the HTML. Just refer to the prototypes I added in the CSS folder for now under "prototype-examples" just so you can see them while you are working
+I also added a min-width for the site, please go check since I just added a random small number for now -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +22,7 @@
 </head>
 
 <body class="site">
+<!--All the sections that are supposed to be full length (reach fully end to end and no margin) don't reach the edges of the page, does the root settings in CSS for margin need to be at 0 so it can reach both ends with no gap?-->
   <!-- header section -->
   <header class="head">
     <h1 class="hidden">Industry Night Event</h1>
@@ -62,7 +64,7 @@
         <h2>You're Invited!</h2>
         <div>
           <p>to the 2026 <br><span class="highlight">Industry Night</span></p>
-          <p>join us showcasing this year's works by Fanshawe's <br> passionate <span>Interactive Media and UX
+          <p>Join us showcasing this year's works by Fanshawe's <br> passionate <span>Interactive Media and UX
               Design</span>
             students!</p>
         </div>
@@ -98,6 +100,7 @@
               <h3>137 Dundas St.</h3>
               <p>Fanshawe College, Downtown Campus London, ON N6A 1E9</p>
             </div>
+<!--in the design from Figma there is that red bar I made that is supposed to act like a container for this text here. Same as for the creator of website section.-->
             <div class="save-the-date">
               <p>save the date!</p>
             </div>
@@ -106,6 +109,7 @@
             <div>
               <img src="images/svgs/industry-clock.svg" alt="Itinerary Icon">
               <h2>Itinerary</h2>
+<!--the vertical lines that are supposed to go beside the time stamps are moving out of place and overlapping ontop of the text. I looked in inspect tools and saw the lines that are supposed to be apart of this column are actually connected to the Date and Place sections, not Itinerary. HTML may have to be aranged around to fix? -->
               <div class="line"></div>
               <h3>4Pm - 6Pm</h3>
               <p>Spotlight Presentations @ The Good Foundation Inc. Theatre</p>
@@ -138,6 +142,7 @@
           </p>
         </div>
         <div>
+<!--the image here is stretched a bit. for the images through the site make sure they scale and not stretch out-->
           <img src="images/industry-night-photography/DSC00967.jpg" alt="Client Image">
         </div>
       </div>
@@ -190,7 +195,7 @@
             Discover how <span>creativity meets technology</span> through design, coding and digital media.
           </p>
           <p><span>Learn more</span> about the Interactive Media Design program.(IDP3) below</p>
-          <a href="#">IDP3 program</a>
+          <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next">IDP3 program</a>
         </div>
       </div>
       <div class="one-item sm-one-item md-one-item lg-one-item program-description">
@@ -206,6 +211,7 @@
     </section>
 
     <!-- Creator Section -->
+<!--the text is going outside the svg bars (text becomes to big and is not acting like a container for the text) I did add "prototype-examples" folder in the CSS folder just so you can see the designs Amy and I had (so it's easier on your end to match the design + not having to go back and forth between Figma and VSC :) -->
     <section id="creator">
       <h2>Meet the Creators</h2>
       <p>Designers & Developers of this Website</p>
@@ -254,13 +260,14 @@
     </section>
 
     <!-- portfolio Section -->
+<!--the button and text don't align with each other in the centre-->
     <section id="portfolio">
       <div class="one-item sm-one-item md-one-item lg-one-item">
         <h2>Student Portfolios</h2>
         <p>
           Meet the students and see their Work
         </p>
-        <a href="#">Portfolio</a>
+        <a href="portfolios.html">Portfolio</a>
       </div>
     </section>
   </main>
@@ -272,11 +279,13 @@
         <nav id="footer-nav" aria-label="Main navigation">
           <h2 class="hidden">Navigation bar</h2>
           <ul>
+<!--I added the visit fanshawe.ca to the footer nav so it can match with the other text, however is there a way to now just make it a very light grey (and not the darker grey that was first there)?
+Also, footer nav is fully gone when put into mobile size, the footer nav still needs to be there-->
             <li><a href="index.html">Home</a></li>
             <li><a href="portfolios.html">Portfolio</a></li>
+            <li><a href="https://fanshawe.ca">visit fanshawe.ca</a></li>
           </ul>
         </nav>
-        <a href="https://fanshawe.ca" class="fanshawe">visit fanshawe.ca</a>
         <p>
           <span>137 Dundas St,</span><br>
           London, ON, Canada <br>
