@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industry Night Site</title>
+
+  <!-- tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/xmm7wfp.css">
+
+  <!-- font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- style sheet  -->
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="site">
+  <!-- header section -->
+  <header class="head">
+    <h1 class="hidden">Industry Night Event</h1>
+    <div class="one-item sm-three-items md-three-items lg-three-items">
+      <!-- Logo Site Title -->
+      <div class="logo">
+        <a href="index.html">
+          <!-- <img src="images/primary-allwhite.svg" alt="Industry Night Logo"> -->
+          <object data="images/primary-allwhite.svg" type="image/svg+xml"></object>
+          <span class="hidden">Industry Night</span>
+        </a>
+      </div>
+      <div class="nav-menu">
+        <!-- Hamburger Button -->
+        <button id="menu-btn" aria-controls="main-nav" aria-expanded="false">
+          <!-- Hamburger Icon -->
+          <img src="images/svgs/industry-hamburger.svg" alt="Menu">
+        </button>
+
+        <!-- Navigation -->
+        <nav id="main-nav" aria-label="Main navigation">
+          <h2 class="hidden">Navigation bar</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolios.html">Portfolio</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Fanshawe Link -->
+      <a href="https://fanshawe.ca" target="_blank" class="fanshawe">fanshawe.ca</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- portflio hero section  -->
+    <section id="portfolio1">
+      <div class="one-item sm-one-item md-one-item lg-one-item">
+        <div>
+          <h2>Student Portfolios showcases</h2>
+          <p>Experience the passion and talent of our students through a showcase of portfolios in digital design and
+            development.</p>
+        </div>
+        <div class="protfolio-button">
+          <button class="active">View All</button>
+          <button>Project Manager</button>
+          <button>Graphic Designer</button>
+          <button>Frontend Developer</button>
+          <button>Backend Developer</button>
+          <button>Motion Designer</button>
+        </div>
+      </div>
+    </section>
+    <hr class="horizontal-line">
+    <!-- Portfolio student list  -->
+    <section id="student-list">
+      <div class="two-items sm-three-items md-four-items lg-four-items">
+        <div class="student-card">
+          <h2>Student Name 1</h2>
+          <p>Developer/Designer Etc.</p>
+          <img src="images/student-portfolio.jpg" alt="Student Name Portfolio Image Placeholder 1">
+          <a href="#">View Portfolio</a>
+        </div>
+        <div class="student-card">
+          <h2>Student Name 2</h2>
+          <p>Developer/Designer Etc.</p>
+          <img src="images/student-portfolio.jpg" alt="Student Name Portfolio Image Placeholder 2">
+          <a href="#">View Portfolio</a>
+        </div>
+        <div class="student-card">
+          <h2>Student Name 3</h2>
+          <p>Developer/Designer Etc.</p>
+          <img src="images/student-portfolio.jpg" alt="Student Name Portfolio Image Placeholder 3">
+          <a href="#">View Portfolio</a>
+        </div>
+        <div class="student-card">
+          <h2>Student Name 4</h2>
+          <p>Developer/Designer Etc.</p>
+          <img src="images/student-portfolio.jpg" alt="Student Name Portfolio Image Placeholder 4">
+          <a href="#">View Portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer section  -->
+  <footer class="foot">
+    <div class="one-item sm-one-item md-one-item lg-one-item">
+      <div>
+        <nav id="footer-nav" aria-label="Main navigation">
+          <h2 class="hidden">Navigation bar</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolios.html">Portfolio</a></li>
+          </ul>
+        </nav>
+        <a href="https://fanshawe.ca" class="fanshawe">visit fanshawe.ca</a>
+        <p>
+          <span>137 Dundas St,</span><br>
+          London, ON, Canada <br>
+          N6A 1G3
+        </p>
+        <p>
+          <span>Fanshawe College, IDP3</span><br>
+          &copy; 2026 all rights reserved.
+        </p>
+      </div>
+      <div>
+        <h2>Stay connected</h2>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
