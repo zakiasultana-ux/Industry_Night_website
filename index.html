@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--the site looks amazing so far! There are some alignment issues that I pointed out in the HTML. Just refer to the prototypes I added in the CSS folder for now under "prototype-examples" just so you can see them while you are working
-I also added a min-width for the site, please go check since I just added a random small number for now -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,15 +19,9 @@ I also added a min-width for the site, please go check since I just added a rand
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<!--are we adding the other designs from the libraries? (mentioned on discord, Jo sent them after our meeting) if it is not a requirment and is said we can add later, no worries... but it would be nice to add them so when we submit the profs can take a look on what we are going to do with the page.
-It was mainly for the hero section and the testimonials-->
+
 <body class="site">
-
-<!--All the sections that are supposed to be full length (reach fully end to end and no margin) don't reach the edges of the page, does the root settings in CSS for margin need to be at 0 so it can reach both ends with no gap?-->
-
   <!-- header section -->
-
-<!--The hamburger menu goes under the Fanshawe logo in mobile size. Is there too much padding and or margin for the contents inside the header?-->
   <header class="head">
     <h1 class="hidden">Industry Night Event</h1>
     <div class="one-item sm-three-items md-three-items lg-three-items">
@@ -40,7 +33,6 @@ It was mainly for the hero section and the testimonials-->
           <span class="hidden">Industry Night</span>
         </a>
       </div>
-<!--unsure if you noticed, there are these tiny red lines in the hamburger menu at the left end of each of the three bars... is there something wrong with the icon or is that the nav acting up?-->
       <div class="nav-menu">
         <!-- Hamburger Button -->
         <button id="menu-btn" aria-controls="main-nav" aria-expanded="false">
@@ -54,10 +46,12 @@ It was mainly for the hero section and the testimonials-->
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="portfolios.html">Portfolio</a></li>
-            <li><a href="https://fanshawe.ca">Fanshawe.ca</a></li>
           </ul>
         </nav>
       </div>
+      <!-- Fanshawe Link -->
+      <a href="https://fanshawe.ca" target="_blank" class="fanshawe">fanshawe.ca</a>
+    </div>
   </header>
 
   <main class="main">
@@ -65,10 +59,10 @@ It was mainly for the hero section and the testimonials-->
     <section id="hero">
       <div class="one-item sm-one-item md-one-item lg-one-item">
         <!-- Hero Text -->
-        <h2>You're Invited!</h2>
+        <h2>You're Invited</h2>
         <div>
           <p>to the 2026 <br><span class="highlight">Industry Night</span></p>
-          <p>Join us showcasing this year's works by Fanshawe's <br> passionate <span>Interactive Media and UX
+          <p>join us showcasing this year's works by Fanshawe's <br> passionate <span>Interactive Media and UX
               Design</span>
             students!</p>
         </div>
@@ -93,36 +87,39 @@ It was mainly for the hero section and the testimonials-->
             <div>
               <img src="images/svgs/industry-calendar.svg" alt="Date Icon">
               <h2>Date</h2>
-              <div class="vertical-line"></div>
-              <h3>April 24th, 2025</h3>
-              <p>Thursday (4Pm - 9Pm)</p>
+              <div class="vertical-line">
+                <h3>April 24th, 2025</h3>
+                <p>Thursday (4Pm - 9Pm)</p>
+              </div>
             </div>
             <div>
               <img src="images/svgs/industry-location.svg" alt="Place Icon">
               <h2>Place</h2>
-              <div class="vertical-line1"></div>
-              <h3>137 Dundas St.</h3>
-              <p>Fanshawe College, Downtown Campus London, ON N6A 1E9</p>
-            </div>
-<!--in the design from Figma there is that red bar I made that is supposed to act like a container for this text here. Same as for the creator of website section.-->
-            <div class="save-the-date">
-              <p>save the date!</p>
+              <div class="vertical-line">
+                <h3>137 Dundas St.</h3>
+                <p>Fanshawe College, Downtown Campus London, ON N6A 1E9</p>
+              </div>
+              <div class="save-the-date">
+                <p>save the date!</p>
+              </div>
             </div>
           </div>
           <div>
             <div>
               <img src="images/svgs/industry-clock.svg" alt="Itinerary Icon">
               <h2>Itinerary</h2>
-<!--the vertical lines that are supposed to go beside the time stamps are moving out of place and overlapping ontop of the text. I looked in inspect tools and saw the lines that are supposed to be apart of this column are actually connected to the Date and Place sections, not Itinerary. HTML may have to be aranged around to fix? -->
-              <div class="line"></div>
-              <h3>4Pm - 6Pm</h3>
-              <p>Spotlight Presentations @ The Good Foundation Inc. Theatre</p>
-              <div class="line1"></div>
-              <h3>6Pm - 7:30Pm</h3>
-              <p>Student Portfolio Viewing @ Level 4 Labs</p>
-              <div class="line2"></div>
-              <h3>7:30Pm - 9Pm</h3>
-              <p>Food & Drinks, Mingle & Networking @ The Chef's Table</p>
+              <div class="vertical-line">
+                <h3>4Pm - 6Pm</h3>
+                <p>Spotlight Presentations @ The Good Foundation Inc. Theatre</p>
+              </div>
+              <div class="vertical-line">
+                <h3>6Pm - 7:30Pm</h3>
+                <p>Student Portfolio Viewing @ Level 4 Labs</p>
+              </div>
+              <div class="vertical-line">
+                <h3>7:30Pm - 9Pm</h3>
+                <p>Food & Drinks, Mingle & Networking @ The Chef's Table</p>
+              </div>
             </div>
           </div>
         </div>
@@ -146,7 +143,6 @@ It was mainly for the hero section and the testimonials-->
           </p>
         </div>
         <div>
-<!--the image here is stretched a bit. for the images through the site make sure they scale and not stretch out-->
           <img src="images/industry-night-photography/DSC00967.jpg" alt="Client Image">
         </div>
       </div>
@@ -194,106 +190,106 @@ It was mainly for the hero section and the testimonials-->
           <img src="images/industry-night-photography/DSC00978.jpg" alt="program image">
         </div>
         <div class="program-text">
-<!--Just make the Interested in this Awesome Program? a touch bigger so it can be easily read as a header-->
           <h2>Interested in this <span>Awesome</span> Program?</h2>
           <p>
             Discover how <span>creativity meets technology</span> through design, coding and digital media.
           </p>
           <p><span>Learn more</span> about the Interactive Media Design program.(IDP3) below</p>
-          <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next">IDP3 program</a>
+          <a href="#">IDP3 program</a>
         </div>
       </div>
       <div class="one-item sm-one-item md-one-item lg-one-item program-description">
-        <p>The Interactive Media Design program (IDP3) at Fanshawe's Downtown campus blends creativity and technology
+        <p>
+          The Interactive Media Design program (IDP3) at Fanshawe's Downtown campus blends creativity and technology
           with an emphasis on hands-on learning. Students take on projects in areas such as <span>Graphic Design, 3D
             Modeling, Front-end Development, Back-end Development, Animation and Interactive Media.</span> Gaining
-          practical experience in both creative and technical aspects is key to their success.</p>
-        <p>Graduates leave with a professional portfolio that showcasing their range and growth, opening pathways to
+          practical experience in both creative and technical aspects is key to their success.
+        </p>
+        <p>
+          Graduates leave with a professional portfolio that showcasing their range and growth, opening pathways to
           careers in digital design, web and application devlopment, media production, and related fields. The program
           not only develops technical expertise but also fosters adaptability, preparing students to succeed in am
-          industry that is always <span>evolving.</span></p>
-      </div>
-    </section>
-
-    <!-- Creator Section -->
-<!--the text is going outside the svg bars (text becomes to big and is not acting like a container for the text) I did add "prototype-examples" folder in the CSS folder just so you can see the designs Amy and I had (so it's easier on your end to match the design + not having to go back and forth between Figma and VSC :)
-I added jpg files of the northstar backgrounds (the red one is supposed to be the background img for the creator of website section, and the light grey one we see through our the website)-->
-    <section id="creator">
-      <h2>Meet the Creators</h2>
-<!--Just make the Designers & Developers of this Website a touch bigger, not much of an issue though-->
-      <p>Designers & Developers of this Website</p>
-      <div class="two-items sm-four-items md-four-items lg-four-items">
-        <div class="creator-box">
-          <img src="images/creator-1.jpg" alt="Portrait of Creator 1">
-          <div class="creator-text">
-            <h3>Josephine Muncaster</h3>
-            <p>Role: Motion Designer</p>
-          </div>
-          <div class="view-portfolio">
-            <a href="#">View Portfolio</a>
-          </div>
-        </div>
-        <div class="creator-box">
-          <img src="images/creator-2.jpg" alt="Portrait of Creator 2">
-          <div class="creator-text">
-            <h3>Amy Armstrong</h3>
-            <p>Role: Designer</p>
-          </div>
-          <div class="view-portfolio">
-            <a href="#">View Portfolio</a>
-          </div>
-        </div>
-        <div class="creator-box">
-          <img src="images/creator-3.jpg" alt="Portrait of Creator 3">
-          <div class="creator-text">
-            <h3>Laila Seif</h3>
-            <p>Role: Project Manager/Designer</p>
-          </div>
-          <div class="view-portfolio">
-            <a href="#">View Portfolio</a>
-          </div>
-        </div>
-        <div class="creator-box">
-          <img src="images/creator-4.jpg" alt="Portrait of Creator 4">
-          <div class="creator-text">
-            <h3>Zakia Sultana</h3>
-            <p>Role: Developer</p>
-          </div>
-          <div class="view-portfolio">
-            <a href="#">View Portfolio</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- portfolio Section -->
-<!--the button and text don't align with each other in the centre-->
-    <section id="portfolio">
-      <div class="one-item sm-one-item md-one-item lg-one-item">
-        <h2>Student Portfolios</h2>
-        <p>
-          Meet the students and see their Work
+          industry that is always <span>evolving.</span>
         </p>
-        <a href="portfolios.html">VIEW NOW</a>
       </div>
+    </section>
+
+    <section class="one-item sm-one-item md-one-item lg-one-item">
+      <h2 class="hidden">creator and protfolio</h2>
+      <!-- Creator Section -->
+      <section id="creator">
+        <h2>Meet the Creators</h2>
+        <p>Designers & Developers of this Website</p>
+        <div class="two-items sm-four-items md-four-items lg-four-items">
+          <div class="creator-box">
+            <img src="images/creator-1.jpg" alt="Portrait of Creator 1">
+            <div class="creator-text">
+              <h3>Josephine Muncaster</h3>
+              <p>Role: Motion Designer</p>
+            </div>
+            <div class="view-portfolio">
+              <a href="#">View Portfolio</a>
+            </div>
+          </div>
+          <div class="creator-box">
+            <img src="images/creator-2.jpg" alt="Portrait of Creator 2">
+            <div class="creator-text">
+              <h3>Amy Armstrong</h3>
+              <p>Role: Designer</p>
+            </div>
+            <div class="view-portfolio">
+              <a href="#">View Portfolio</a>
+            </div>
+          </div>
+          <div class="creator-box">
+            <img src="images/creator-3.jpg" alt="Portrait of Creator 3">
+            <div class="creator-text">
+              <h3>Laila Seif</h3>
+              <p>Role: Manager/Designer</p>
+            </div>
+            <div class="view-portfolio">
+              <a href="#">View Portfolio</a>
+            </div>
+          </div>
+          <div class="creator-box">
+            <img src="images/creator-4.jpg" alt="Portrait of Creator 4">
+            <div class="creator-text">
+              <h3>Zakia Sultana</h3>
+              <p>Role: Developer</p>
+            </div>
+            <div class="view-portfolio">
+              <a href="#">View Portfolio</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfolio Section -->
+      <section id="portfolio">
+        <div class="one-item sm-one-item md-one-item lg-one-item">
+          <h2>Student Portfolios</h2>
+          <p>
+            Meet the students and see their Work
+          </p>
+          <a href="portfolios.html">VIEW NOW</a>
+        </div>
+      </section>
     </section>
   </main>
 
   <!-- footer section  -->
   <footer class="foot">
+
     <div class="one-item sm-one-item md-one-item lg-one-item">
       <div>
         <nav id="footer-nav" aria-label="Main navigation">
           <h2 class="hidden">Navigation bar</h2>
           <ul>
-<!--I added the visit fanshawe.ca to the footer nav so it can match with the other text, however is there a way to now just make it a very light grey (and not the darker grey that was first there)?
-Also, footer nav is fully gone when put into mobile size, the footer nav still needs to be there
-the footer nav is far to the right when it should be more to the left-->
             <li><a href="index.html">Home</a></li>
             <li><a href="portfolios.html">Portfolio</a></li>
-            <li><a href="https://fanshawe.ca">visit fanshawe.ca</a></li>
           </ul>
         </nav>
+        <a href="https://fanshawe.ca" class="fanshawe">visit fanshawe.ca</a>
         <p>
           <span>137 Dundas St,</span><br>
           London, ON, Canada <br>
@@ -308,9 +304,13 @@ the footer nav is far to the right when it should be more to the left-->
         <h2>Stay connected</h2>
         <a href="https://www.facebook.com/FanshaweCollege/"><i class="fab fa-facebook-f"></i></a>
         <a href="https://x.com/fanshawecollege?lang=en"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/school/fanshawe-college/posts/?feedView=all"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/school/fanshawe-college/posts/?feedView=all"><i
+            class="fab fa-linkedin-in"></i></a>
         <a href="https://www.instagram.com/fanshawecollege/?hl=en"><i class="fab fa-instagram"></i></a>
       </div>
+    </div>
+    <div class="bacground-image">
+      <!-- <img src="images/fanshawe-nortstar-white.svg" alt="fanshawe north star"> -->
     </div>
   </footer>
 
