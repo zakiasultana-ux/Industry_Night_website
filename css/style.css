@@ -95,6 +95,7 @@ header {
     width: auto;
     margin: 10px 0;
     padding-left: 10px;
+    margin: 30px;
 }
 
 /* 03-b. Navigation styles */
@@ -675,13 +676,14 @@ nav li > a:hover::after {
 #portfolio h2, #portfolio1 h2 {
     font-size: 3.5em;
     font-weight: bold;
-    color: var(--dark-red-color);
+    color: var(--red-color);
     text-transform: uppercase;
 }
 
 #portfolio p {
-    color: var(--dark-gray-color);
-    font-size: 2.5em;
+    font-size: 1.25em;
+    margin-bottom: 20px;
+    color: var(--gray-color);
     text-transform: uppercase;
 }
 

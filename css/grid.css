@@ -43,7 +43,7 @@ ___________________________________________ */
    }
 
    /*------------ start mobile ------------*/
-   .site{ min-width: 10em;}
+   .site{ min-width: 5em;}
    .site{ max-width: 48em;}
 
    .mobile{display: block;}
