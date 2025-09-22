@@ -226,6 +226,10 @@ nav li > a:hover::after {
     padding: 50px 20px;
     background-color: white;
     text-align: center;
+
+    background-image: url(../images/Pattern-grey-on-white.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #hero h2 {
@@ -233,7 +237,7 @@ nav li > a:hover::after {
     text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: 4px;
-    color: transparent;
+    color: #fff;
     -webkit-text-stroke: 2px var(--dark-red-color);
     text-shadow: 2px 2px 4px rgba(230, 229, 229, 0.1);
 }
@@ -598,13 +602,14 @@ nav li > a:hover::after {
     padding: 20px;
     text-align: center;
     display: block;
-    filter: drop-shadow(0px 15px 35px var(--dark-gray-color))
+    filter: drop-shadow(0px 20px 25px var(--dark-gray-color))
 }
 
 #creator h2 {
     color: white;
     font-size: 2.3em;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 #creator p {
@@ -616,9 +621,11 @@ nav li > a:hover::after {
 /* 09-a. creator card styles */
 
 .creator-box img {
-    background-color: var(--dark-red-color);
+    background-image: url(../images/Pattern-red-on-red.jpg);
+    background-size: cover;
+    background-position: center;
     border-radius: 20px;
-    height: 200px;
+    height: 300px;
 }
 
 /* 09-b. creator text style */
@@ -681,9 +688,9 @@ nav li > a:hover::after {
 }
 
 #portfolio p {
-    font-size: 1.25em;
+    font-size: 1.5em;
     margin-bottom: 20px;
-    color: var(--gray-color);
+    color: var(--dark-gray-color);
     text-transform: uppercase;
 }
 
@@ -700,6 +707,12 @@ nav li > a:hover::after {
 
 #portfolio a:hover {
     background-color: var(--dark-red-color);
+}
+
+#portfolio {
+    background-image: url(../images/Pattern-grey-on-white.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 /* 11. footer style */
@@ -764,6 +777,7 @@ footer a {
     border-radius: 20px;
     padding: 20px;
     margin: 0px 10px;
+    text-transform: uppercase;
 }
 
 .protfolio-button button:hover{
