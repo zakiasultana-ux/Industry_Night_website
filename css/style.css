@@ -80,12 +80,11 @@ body {
 /* 03. Header styles */
 
 header {
-    background-color: var(--red-color);
+    background-color: var(--dark-red-color);
     color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
-    filter: drop-shadow(4px 0px 10px var(--dark-gray-color));
 }
 
 /* 03-a. Logo styles */
@@ -95,7 +94,6 @@ header {
     width: auto;
     margin: 10px 0;
     padding-left: 10px;
-    margin: 30px;
 }
 
 /* 03-b. Navigation styles */
@@ -131,6 +129,30 @@ header {
     .fanshawe {
         display: none;
     }
+
+    .creator-text h3 {
+        font-size: 1.2em !important;
+    }
+
+    .creator-text p {
+        font-size: 1em !important;
+    }
+
+    footer nav {
+        display: inline-block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    footer nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
 }
 
 @media screen and (min-width: 64em) {
@@ -179,6 +201,7 @@ header {
         align-items: center;
         justify-content: flex-end;
     }
+    
 }
 
 /* 03-e. menu hover effect */
@@ -226,7 +249,6 @@ nav li > a:hover::after {
     padding: 50px 20px;
     background-color: white;
     text-align: center;
-
     background-image: url(../images/Pattern-grey-on-white.jpg);
     background-size: cover;
     background-position: center;
@@ -237,7 +259,7 @@ nav li > a:hover::after {
     text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: 4px;
-    color: #fff;
+    color: transparent;
     -webkit-text-stroke: 2px var(--dark-red-color);
     text-shadow: 2px 2px 4px rgba(230, 229, 229, 0.1);
 }
@@ -322,7 +344,7 @@ nav li > a:hover::after {
     background-blend-mode: color;
     background-size: cover;
     background-position: center;
-    width: 200px;
+    width: 250px;
 }
 
 .save-the-date p {
@@ -337,55 +359,16 @@ nav li > a:hover::after {
 /* 05-a. vertical line styles */
 
 .vertical-line {
-    border-left: 2px solid var(--dark-red-color);
-    height: 1.5em;
-    margin-top: 35px;
-    position: absolute;
-    left: 51%;
-    transform: translateX(-50%);
-}
-
-.vertical-line1 {
     border-left: 2px solid var(--red-color);
-    height: 1.8em;
-    margin-top: 35px;
-    position: absolute;
-    left: 51%;
-    transform: translateX(-50%);
-}
-
-.line {
-    border-left: 2px solid var(--red-color);
-    height: 1.8em;
-    margin-top: 30px;
-    position: absolute;
-    left: 69%;
-    transform: translateX(-50%);
-}
-
-.line1 {
-    border-left: 2px solid var(--red-color);
-    height: 1.2em;
-    margin-top: 110px;
-    position: absolute;
-    left: 69%;
-    transform: translateX(-50%);
-}
-
-.line2 {
-    border-left: 2px solid var(--red-color);
-    height: 1.8em;
-    margin-top: 170px;
-    position: absolute;
-    left: 69%;
-    transform: translateX(-50%);
+    width: 250px;
+    margin: 10px 0px;
 }
 
 /* 05-b. horizontal line styles */
 
 .horizontal-line {
     border: none;
-    border-top: 10px solid var(--dark-red-color);
+    border-top: 10px solid var(--red-color);
 }
 
 /* 06. Client section styles */
@@ -545,7 +528,7 @@ nav li > a:hover::after {
     font-weight: bolder;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    color: var(--red-color);
+    color: var(--dark-red-color);
 }
 
 .program-text h2 span {
@@ -602,14 +585,14 @@ nav li > a:hover::after {
     padding: 20px;
     text-align: center;
     display: block;
-    filter: drop-shadow(0px 20px 25px var(--dark-gray-color))
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 #creator h2 {
     color: white;
     font-size: 2.3em;
     font-weight: bold;
-    text-transform: uppercase;
 }
 
 #creator p {
@@ -625,7 +608,7 @@ nav li > a:hover::after {
     background-size: cover;
     background-position: center;
     border-radius: 20px;
-    height: 300px;
+    height: 200px;
 }
 
 /* 09-b. creator text style */
@@ -634,7 +617,7 @@ nav li > a:hover::after {
     background-image: url('../images/bar-lg.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: 100% 140%;
     width: 100%;
     margin-top: -5px;
 }
@@ -673,24 +656,23 @@ nav li > a:hover::after {
 /* 10. portfolios style */
 
 #portfolio, #portfolio1 {
-    background-color: white;
+    background-image: url(../images/Pattern-grey-on-white.jpg);
+    background-size: cover;
+    background-position: center;
     padding: 20px;
-    padding-bottom: 100px;
-    padding-top: 100px;
     text-align: center;
 }
 
 #portfolio h2, #portfolio1 h2 {
     font-size: 3.5em;
     font-weight: bold;
-    color: var(--red-color);
+    color: var(--dark-red-color);
     text-transform: uppercase;
 }
 
 #portfolio p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
     color: var(--dark-gray-color);
+    font-size: 2.5em;
     text-transform: uppercase;
 }
 
@@ -709,27 +691,44 @@ nav li > a:hover::after {
     background-color: var(--dark-red-color);
 }
 
-#portfolio {
-    background-image: url(../images/Pattern-grey-on-white.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
 /* 11. footer style */
 
 footer {
     background-color: var(--red-color);
-    color: white;
+    /* background-image: url('../images/fanshawe-nortstar-white.svg');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: cover;*/
+    color: white; 
     display: flex;
     flex-direction: column;
-    filter: drop-shadow(0px -15px 40px var(--dark-gray-color))
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
+    /* position: relative; */
 }
+
+.bacground-image {
+    background-image: url('../images/fanshawe-nortstar-white.svg');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: contain;
+    width: 100%;
+}
+/* footer::after {
+    content: "";
+    position: re;
+    inset: 0;
+    background-image: url('../images/fanshawe-nortstar-white.svg');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    opacity: 0.5; 
+    pointer-events: none;
+} */
 
 footer .fanshawe{
     font-size: 0.9em;
     color: var(--gray-color);
     position: absolute;
-    margin-top: -60px;
+    margin-top: -70px;
     margin-left: 25%;
 }
 
@@ -756,9 +755,9 @@ footer a {
 /* 01. portfolio style */
 
 #portfolio1 p {
-    font-size: 1.25em;
-    margin-bottom: 20px;
-    color: var(--gray-color);
+    color: var(--dark-gray-color);
+    font-size: 2.5em;
+    line-height: 1;
 }
 
 /* 02. portfolio button style */
@@ -773,11 +772,10 @@ footer a {
 .protfolio-button button {
     background-color: white;
     color: var(--gray-color);
-    border: 2px solid var(--gray-color);
+    border: 2px solid var(--dark-gray-color);
     border-radius: 20px;
     padding: 20px;
     margin: 0px 10px;
-    text-transform: uppercase;
 }
 
 .protfolio-button button:hover{
