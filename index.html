@@ -1,321 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Industry Night Site</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Industry Night Site</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/xmm7wfp.css" />
 
-  <!-- fonts -->
-  <link rel="stylesheet" href="https://use.typekit.net/xmm7wfp.css">
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-  <!-- font awesome  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- style sheet  -->
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <!-- style sheet  -->
-  <link rel="stylesheet" href="css/grid.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body class="site">
+    <!-- header section -->
+    <header class="head">
+      <h1 class="hidden">Industry Night Event</h1>
+      <div class="two-items sm-three-items md-three-items lg-three-items">
+        <!-- Logo Site Title -->
+        <div class="logo">
+          <a href="index.html">
+            <object data="images/primary-allwhite.svg" type="image/svg+xml"></object>
+            <span class="hidden">Industry Night</span>
+          </a>
+        </div>
+        <div class="nav-menu">
+          <!-- Hamburger Button -->
+          <button id="menu-btn" class="hamburger">
+            <!-- Hamburger Icon -->
+             <object data="images/svgs/industry-hamburger.svg" type="image/svg+xml" class="menuIcon"></object>
+          </button>
 
-<body class="site">
-  <!-- header section -->
-  <header class="head">
-    <h1 class="hidden">Industry Night Event</h1>
-    <div class="one-item sm-three-items md-three-items lg-three-items">
-      <!-- Logo Site Title -->
-      <div class="logo">
-        <a href="index.html">
-          <!-- <img src="images/primary-allwhite.svg" alt="Industry Night Logo"> -->
-          <object data="images/primary-allwhite.svg" type="image/svg+xml"></object>
-          <span class="hidden">Industry Night</span>
-        </a>
-      </div>
-      <div class="nav-menu">
-        <!-- Hamburger Button -->
-        <button id="menu-btn" aria-controls="main-nav" aria-expanded="false">
-          <!-- Hamburger Icon -->
-          <img src="images/svgs/industry-hamburger.svg" alt="Menu">
-        </button>
-
-        <!-- Navigation -->
-        <nav id="main-nav" aria-label="Main navigation">
-          <h2 class="hidden">Navigation bar</h2>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolios.html">Portfolio</a></li>
-          </ul>
-        </nav>
+          <!-- Navigation -->
+          <nav id="main-nav">
+            <h2 class="hidden">Navigation bar</h2>
+            <ul class="menu">
+              <li><a href="index.html" class="menu-item">Home</a></li>
+              <li><a href="portfolios.html" class="menu-item">Portfolio</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <!-- Fanshawe Link -->
       <a href="https://fanshawe.ca" target="_blank" class="fanshawe">fanshawe.ca</a>
-    </div>
-  </header>
+    </header>
 
-  <main class="main">
-    <!-- Hero Section -->
-    <section id="hero">
-      <div class="one-item sm-one-item md-one-item lg-one-item">
-        <!-- Hero Text -->
-        <h2>You're Invited</h2>
-        <div>
-          <p>to the 2026 <br><span class="highlight">Industry Night</span></p>
-          <p>join us showcasing this year's works by Fanshawe's <br> passionate <span>Interactive Media and UX
-              Design</span>
-            students!</p>
-        </div>
-      </div>
-    </section>
-    <hr class="horizontal-line">
-    <!-- Event Section -->
-    <section id="event">
-      <h2 class="hidden">Event Section</h2>
-      <div class="two-items sm-two-items md-two-items lg-two-items">
-        <!-- Video -->
-        <div>
-          <video controls>
-            <source src="#" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
-        <!-- Text -->
-        <div class="event-details two-items sm-two-items md-two-items lg-two-items">
-          <div>
-            <div>
-              <img src="images/svgs/industry-calendar.svg" alt="Date Icon">
-              <h2>Date</h2>
-              <div class="vertical-line">
-                <h3>April 24th, 2025</h3>
-                <p>Thursday (4Pm - 9Pm)</p>
-              </div>
-            </div>
-            <div>
-              <img src="images/svgs/industry-location.svg" alt="Place Icon">
-              <h2>Place</h2>
-              <div class="vertical-line">
-                <h3>137 Dundas St.</h3>
-                <p>Fanshawe College, Downtown Campus London, ON N6A 1E9</p>
-              </div>
-              <div class="save-the-date">
-                <p>save the date!</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="images/svgs/industry-clock.svg" alt="Itinerary Icon">
-              <h2>Itinerary</h2>
-              <div class="vertical-line">
-                <h3>4Pm - 6Pm</h3>
-                <p>Spotlight Presentations @ The Good Foundation Inc. Theatre</p>
-              </div>
-              <div class="vertical-line">
-                <h3>6Pm - 7:30Pm</h3>
-                <p>Student Portfolio Viewing @ Level 4 Labs</p>
-              </div>
-              <div class="vertical-line">
-                <h3>7:30Pm - 9Pm</h3>
-                <p>Food & Drinks, Mingle & Networking @ The Chef's Table</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Client Section -->
-    <section id="client">
-      <h2 class="one-item sm-one-item md-one-item lg-one-item">Royal Canadian Air Forces Association (Local 427 Wing)
-      </h2>
-      <div class="two-items sm-two-items md-two-items lg-two-items">
-        <div>
-          <p>
-            To honor one of London's last remaining wartime structures, Level 4 students created a digital experience
-            showcasing the 427 (London) Wing Bulding.
-            <br><br>
-            Their work combines historical archives, interactive storytelling, and design to inform the public and
-            encourage preservation efforts.
-            <br><br>
-            IDP3 students were tasked to (brief on what we did for client work so users know why we are even mentioning
-            this)
-          </p>
-        </div>
-        <div>
-          <img src="images/industry-night-photography/DSC00967.jpg" alt="Client Image">
-        </div>
-      </div>
-
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-      <div class="one-item sm-one-item md-one-item lg-one-item">
-        <h2>Testimonials</h2>
-        <p>Hear more from the experienced</p>
-      </div>
-      <div class="two-items sm-two-items md-two-items lg-two-items">
-        <div>
-          <img src="images/industry-night-photography/idp-5.jpg" alt="testimonial person">
-          <h3>
-            – Alex Johnson <br><span>IDP/UX professor @ Fanshawe Downtown campus</span>
-          </h3>
-        </div>
-
-        <!-- testimonial text -->
-        <div class="testimonial-text">
-
-          <h4><q>
-              This event was a game-changer for my career. The networking
-              opportunities were invaluable.</q>
-          </h4>
-          <!-- Slider Container -->
-          <div class="slider-container">
-            <i class="fa fa-angle-double-left"></i>
-            <p>4/4</p>
-            <i class="fa fa-angle-double-right"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr class="horizontal-line">
-    <!-- Program Section -->
-    <section id="program">
-      <h3 class="hidden">Program Overview</h3>
-      <div class="two-items sm-two-items md-two-items lg-two-items">
-        <div class="program-images">
-          <img src="images/industry-night-photography/DSC01047.jpg" alt="program image">
-          <img src="images/industry-night-photography/DSC01039.jpg" alt="program image">
-          <img src="images/industry-night-photography/DSC00978.jpg" alt="program image">
-        </div>
-        <div class="program-text">
-          <h2>Interested in this <span>Awesome</span> Program?</h2>
-          <p>
-            Discover how <span>creativity meets technology</span> through design, coding and digital media.
-          </p>
-          <p><span>Learn more</span> about the Interactive Media Design program.(IDP3) below</p>
-          <a href="#">IDP3 program</a>
-        </div>
-      </div>
-      <div class="one-item sm-one-item md-one-item lg-one-item program-description">
-        <p>
-          The Interactive Media Design program (IDP3) at Fanshawe's Downtown campus blends creativity and technology
-          with an emphasis on hands-on learning. Students take on projects in areas such as <span>Graphic Design, 3D
-            Modeling, Front-end Development, Back-end Development, Animation and Interactive Media.</span> Gaining
-          practical experience in both creative and technical aspects is key to their success.
-        </p>
-        <p>
-          Graduates leave with a professional portfolio that showcasing their range and growth, opening pathways to
-          careers in digital design, web and application devlopment, media production, and related fields. The program
-          not only develops technical expertise but also fosters adaptability, preparing students to succeed in am
-          industry that is always <span>evolving.</span>
-        </p>
-      </div>
-    </section>
-
-    <section class="one-item sm-one-item md-one-item lg-one-item">
-      <h2 class="hidden">creator and protfolio</h2>
-      <!-- Creator Section -->
-      <section id="creator">
-        <h2>Meet the Creators</h2>
-        <p>Designers & Developers of this Website</p>
-        <div class="two-items sm-four-items md-four-items lg-four-items">
-          <div class="creator-box">
-            <img src="images/creator-1.jpg" alt="Portrait of Creator 1">
-            <div class="creator-text">
-              <h3>Josephine Muncaster</h3>
-              <p>Role: Motion Designer</p>
-            </div>
-            <div class="view-portfolio">
-              <a href="#">View Portfolio</a>
-            </div>
-          </div>
-          <div class="creator-box">
-            <img src="images/creator-2.jpg" alt="Portrait of Creator 2">
-            <div class="creator-text">
-              <h3>Amy Armstrong</h3>
-              <p>Role: Designer</p>
-            </div>
-            <div class="view-portfolio">
-              <a href="#">View Portfolio</a>
-            </div>
-          </div>
-          <div class="creator-box">
-            <img src="images/creator-3.jpg" alt="Portrait of Creator 3">
-            <div class="creator-text">
-              <h3>Laila Seif</h3>
-              <p>Role: Manager/Designer</p>
-            </div>
-            <div class="view-portfolio">
-              <a href="#">View Portfolio</a>
-            </div>
-          </div>
-          <div class="creator-box">
-            <img src="images/creator-4.jpg" alt="Portrait of Creator 4">
-            <div class="creator-text">
-              <h3>Zakia Sultana</h3>
-              <p>Role: Developer</p>
-            </div>
-            <div class="view-portfolio">
-              <a href="#">View Portfolio</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- portfolio Section -->
-      <section id="portfolio">
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero">
         <div class="one-item sm-one-item md-one-item lg-one-item">
-          <h2>Student Portfolios</h2>
-          <p>
-            Meet the students and see their Work
-          </p>
-          <a href="portfolios.html">VIEW NOW</a>
+          <!-- Hero Text -->
+          <h2>You're Invited</h2>
+          <div>
+            <p>
+              to the 2026 <br /><span class="highlight">Industry Night</span>
+            </p>
+            <p>
+              join us showcasing this year's works by Fanshawe's <br />
+              passionate <span>Interactive Media and UX Design</span> students!
+            </p>
+          </div>
         </div>
       </section>
-    </section>
-  </main>
+      <hr class="horizontal-line" />
+      <!-- Event Section -->
+      <section id="event">
+        <h2 class="hidden">Event Section</h2>
+        <div class="two-items sm-two-items md-two-items lg-two-items">
+          <!-- Video -->
+          <div>
+            <video controls>
+              <source src="#" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
-  <!-- footer section  -->
-  <footer class="foot">
+          <!-- Text -->
+          <div
+            class="event-details two-items sm-two-items md-two-items lg-two-items"
+          >
+            <div>
+              <div>
+                <img src="images/svgs/industry-calendar.svg" alt="Date Icon" />
+                <h2>Date</h2>
+                <div class="vertical-line">
+                  <h3>April 24th, 2025</h3>
+                  <p>Thursday (4Pm - 9Pm)</p>
+                </div>
+              </div>
+              <div>
+                <img src="images/svgs/industry-location.svg" alt="Place Icon" />
+                <h2>Place</h2>
+                <div class="vertical-line">
+                  <h3>137 Dundas St.</h3>
+                  <p>Fanshawe College, Downtown Campus London, ON N6A 1E9</p>
+                </div>
+                <div class="save-the-date">
+                  <p>save the date!</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img
+                  src="images/svgs/industry-clock.svg"
+                  alt="Itinerary Icon"
+                />
+                <h2>Itinerary</h2>
+                <div class="vertical-line">
+                  <h3>4Pm - 6Pm</h3>
+                  <p>
+                    Spotlight Presentations @ The Good Foundation Inc. Theatre
+                  </p>
+                </div>
+                <div class="vertical-line">
+                  <h3>6Pm - 7:30Pm</h3>
+                  <p>Student Portfolio Viewing @ Level 4 Labs</p>
+                </div>
+                <div class="vertical-line">
+                  <h3>7:30Pm - 9Pm</h3>
+                  <p>Food & Drinks, Mingle & Networking @ The Chef's Table</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Client Section -->
+      <section id="client">
+        <h2 class="one-item sm-one-item md-one-item lg-one-item">
+          Royal Canadian Air Forces Association (Local 427 Wing)
+        </h2>
+        <div class="two-items sm-two-items md-two-items lg-two-items">
+          <div>
+            <p>
+              To honor one of London's last remaining wartime structures, Level
+              4 students created a digital experience showcasing the 427
+              (London) Wing Bulding.
+              <br /><br />
+              Their work combines historical archives, interactive storytelling,
+              and design to inform the public and encourage preservation
+              efforts.
+              <br /><br />
+              IDP3 students were tasked to (brief on what we did for client work
+              so users know why we are even mentioning this)
+            </p>
+          </div>
+          <div>
+            <img
+              src="images/industry-night-photography/DSC00967.jpg"
+              alt="Client Image"
+            />
+          </div>
+        </div>
+      </section>
 
-    <div class="one-item sm-one-item md-one-item lg-one-item">
-      <div>
-        <nav id="footer-nav" aria-label="Main navigation">
-          <h2 class="hidden">Navigation bar</h2>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolios.html">Portfolio</a></li>
-          </ul>
-        </nav>
-        <a href="https://fanshawe.ca" class="fanshawe">visit fanshawe.ca</a>
-        <p>
-          <span>137 Dundas St,</span><br>
-          London, ON, Canada <br>
-          N6A 1G3
-        </p>
-        <p>
-          <span>Fanshawe College, IDP3</span><br>
-          &copy; 2026 all rights reserved.
-        </p>
+      <!-- Testimonials Section -->
+      <section id="testimonials">
+        <div class="one-item sm-one-item md-one-item lg-one-item">
+          <h2>Testimonials</h2>
+          <p>Hear more from the experienced</p>
+        </div>
+        <div class="two-items sm-two-items md-two-items lg-two-items">
+          <div>
+            <img
+              src="images/industry-night-photography/idp-5.jpg"
+              alt="testimonial person"
+            />
+            <h3>
+              – Alex Johnson <br /><span
+                >IDP/UX professor @ Fanshawe Downtown campus</span
+              >
+            </h3>
+          </div>
+
+          <!-- testimonial text -->
+          <div class="testimonial-text">
+            <h4>
+              <q>
+                This event was a game-changer for my career. The networking
+                opportunities were invaluable.</q
+              >
+            </h4>
+            <!-- Slider Container -->
+            <div class="slider-container">
+              <i class="fa fa-angle-double-left"></i>
+              <p>4/4</p>
+              <i class="fa fa-angle-double-right"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="horizontal-line" />
+      <!-- Program Section -->
+      <section id="program">
+        <h3 class="hidden">Program Overview</h3>
+        <div class="two-items sm-two-items md-two-items lg-two-items">
+          <div class="program-images">
+            <img
+              src="images/industry-night-photography/DSC01047.jpg"
+              alt="program image"
+            />
+            <img
+              src="images/industry-night-photography/DSC01039.jpg"
+              alt="program image"
+            />
+            <img
+              src="images/industry-night-photography/DSC00978.jpg"
+              alt="program image"
+            />
+          </div>
+          <div class="program-text">
+            <h2>Interested in this <span>Awesome</span> Program?</h2>
+            <p>
+              Discover how <span>creativity meets technology</span> through
+              design, coding and digital media.
+            </p>
+            <p>
+              <span>Learn more</span> about the Interactive Media Design
+              program.(IDP3) below
+            </p>
+            <a href="#">IDP3 program</a>
+          </div>
+        </div>
+        <div
+          class="one-item sm-one-item md-one-item lg-one-item program-description"
+        >
+          <p>
+            The Interactive Media Design program (IDP3) at Fanshawe's Downtown
+            campus blends creativity and technology with an emphasis on hands-on
+            learning. Students take on projects in areas such as
+            <span
+              >Graphic Design, 3D Modeling, Front-end Development, Back-end
+              Development, Animation and Interactive Media.</span
+            >
+            Gaining practical experience in both creative and technical aspects
+            is key to their success.
+          </p>
+          <p>
+            Graduates leave with a professional portfolio that showcasing their
+            range and growth, opening pathways to careers in digital design, web
+            and application devlopment, media production, and related fields.
+            The program not only develops technical expertise but also fosters
+            adaptability, preparing students to succeed in am industry that is
+            always <span>evolving.</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="one-item sm-one-item md-one-item lg-one-item">
+        <h2 class="hidden">creator and protfolio</h2>
+        <!-- Creator Section -->
+        <section id="creator">
+          <h2>Meet the Creators</h2>
+          <p>Designers & Developers of this Website</p>
+          <div class="two-items sm-four-items md-four-items lg-four-items">
+            <div class="creator-box">
+              <img src="images/creator-1.jpg" alt="Portrait of Creator 1" />
+              <div class="creator-text">
+                <h3>Josephine Muncaster</h3>
+                <p>Role: Motion Designer</p>
+              </div>
+              <div class="view-portfolio">
+                <a href="#">View Portfolio</a>
+              </div>
+            </div>
+            <div class="creator-box">
+              <img src="images/creator-2.jpg" alt="Portrait of Creator 2" />
+              <div class="creator-text">
+                <h3>Amy Armstrong</h3>
+                <p>Role: Designer</p>
+              </div>
+              <div class="view-portfolio">
+                <a href="#">View Portfolio</a>
+              </div>
+            </div>
+            <div class="creator-box">
+              <img src="images/creator-3.jpg" alt="Portrait of Creator 3" />
+              <div class="creator-text">
+                <h3>Laila Seif</h3>
+                <p>Role: Manager/Designer</p>
+              </div>
+              <div class="view-portfolio">
+                <a href="#">View Portfolio</a>
+              </div>
+            </div>
+            <div class="creator-box">
+              <img src="images/creator-4.jpg" alt="Portrait of Creator 4" />
+              <div class="creator-text">
+                <h3>Zakia Sultana</h3>
+                <p>Role: Developer</p>
+              </div>
+              <div class="view-portfolio">
+                <a href="#">View Portfolio</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- portfolio Section -->
+        <section id="portfolio">
+          <div class="one-item sm-one-item md-one-item lg-one-item">
+            <h2>Student Portfolios</h2>
+            <p>Meet the students and see their Work</p>
+            <a href="portfolios.html">VIEW NOW</a>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- footer section  -->
+    <footer class="foot" id="foot">
+      <div class="one-item sm-one-item md-one-item lg-one-item">
+        <div>
+          <nav id="footer-nav" aria-label="Main navigation">
+            <h2 class="hidden">Navigation bar</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolios.html">Portfolio</a></li>
+            </ul>
+          </nav>
+          <a href="https://fanshawe.ca" class="fanshawe">visit fanshawe.ca</a>
+          <p>
+            <span>137 Dundas St,</span><br />
+            London, ON, Canada <br />
+            N6A 1G3
+          </p>
+          <p>
+            <span>Fanshawe College, IDP3</span><br />
+            &copy; 2026 all rights reserved.
+          </p>
+        </div>
+        <div>
+          <h2>Stay connected</h2>
+          <a href="https://www.facebook.com/FanshaweCollege/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/fanshawecollege?lang=en"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/school/fanshawe-college/posts/?feedView=all"><i  class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/fanshawecollege/?hl=en"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
-      <div>
-        <h2>Stay connected</h2>
-        <a href="https://www.facebook.com/FanshaweCollege/"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://x.com/fanshawecollege?lang=en"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/school/fanshawe-college/posts/?feedView=all"><i
-            class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/fanshawecollege/?hl=en"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-    <div class="bacground-image">
-      <!-- <img src="images/fanshawe-nortstar-white.svg" alt="fanshawe north star"> -->
-    </div>
-  </footer>
+    </footer>
 
-  <!-- script -->
-  <script src="js/script.js"></script>
-</body>
-
+    <!-- script -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
