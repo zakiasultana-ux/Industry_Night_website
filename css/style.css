@@ -16,10 +16,11 @@ ___________________________________________ */
     02. CSS general styles
     03. Header styles
     03-a. Logo styles
-    03-b. Navigation styles
-    03-c. Hamburger button styles
-    03-d. @media queries
-    03-e. menu hover effect
+    03-b. Hamburger button styles
+    03-c. Navigation styles
+    03-d. fanshawe link style
+    03-e. @media queries
+    03-f. menu hover effect
     04. Hero section styles
     05. Event section styles
     05-a. vertical line styles
@@ -96,16 +97,7 @@ header {
     padding-left: 10px;
 }
 
-/* 03-b. Navigation styles */
-
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-}
-
-/* 03-c. Hamburger button styles */
+/* 03-b. Hamburger button styles */
 
 #menu-btn {
     background: none;
@@ -114,107 +106,102 @@ header {
     padding: 10px;
 }
 
-#menu-btn img {
+.menuIcon {
     height: 30px;
     width: auto;
 }
 
-/* 03-d. @media queries */
-
-@media screen and (max-width: 64em) {
-    nav {
-        display: none;
-    }
-
-    .fanshawe {
-        display: none;
-    }
-
-    .creator-text h3 {
-        font-size: 1.2em !important;
-    }
-
-    .creator-text p {
-        font-size: 1em !important;
-    }
-
-    footer nav {
-        display: inline-block;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 20px;
-    }
-
-    footer nav ul {
-        list-style: none;
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-    
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
 }
 
+/* 03-c. Navigation styles */
+
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    z-index: 99;
+    background-color: var(--dark-red-color);
+}
+
+.menu li {
+    margin: 0 15px;
+    padding: 15px 0px;
+}
+
+.menu-item {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: larger;
+    transition: all 0.3s ease;
+}
+
+.showMenu {
+    transform: translateY(0);
+    padding-top: 4rem;
+}
+
+/* 03-d. fanshawe link style */
+
+.fanshawe {
+    display: none;
+}
+
+/* 03-e. @media queries */
+
 @media screen and (min-width: 64em) {
-    
+
+    .menu {
+        list-style: none;
+        display: flex;
+        margin-top: 30px;
+    }
+
     #menu-btn {
         display: none;
     }
 
-    nav {
+    .nav-menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
-    nav ul {
-        list-style: none;
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin: 0 15px;
-        padding-top: 5px;
-    }
-
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        padding: 10px 15px;
-        border-radius: 5px;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: larger;
-        transition: all 0.3s ease;
-    }
     .fanshawe {
+        display: inline-block;
         height: 40px;
         width: auto;
         padding-top: 20px;
+        padding-right: 100px;
         text-transform: uppercase;
         font-weight: bold;
         font-size: larger;
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        right: 0;
     }
-    
+
 }
 
-/* 03-e. menu hover effect */
+/* 03-f. menu hover effect */
 
-nav li > a {
-  text-decoration: none;
+.menu li > .menu-item {
   position: relative;
   overflow: hidden;
-    display: inline-block;
 }
 
-nav li > a::before,
-nav li > a::after {
+.menu li > .menu-item::before,
+.menu li > .menu-item::after {
   content: "";
   position: absolute;
   width: 0;
@@ -223,22 +210,22 @@ nav li > a::after {
   transition: all 0.5s;
 }
 
-nav li > a::before {
+.menu li > .menu-item::before {
   top: 0;
   left: 0;
 }
 
-nav li > a::after {
+.menu li > .menu-item::after {
   bottom: 0;
   right: 0;
 }
 
-nav li > a:hover::before {
+.menu li > .menu-item:hover::before {
   width: 100%;
   transition: width 0.25s ease-in-out;
 }
 
-nav li > a:hover::after {
+.menu li > .menu-item:hover::after {
   width: 100%;
   transition: width 0.25s ease-in-out 0.25s;
 }
@@ -695,41 +682,29 @@ nav li > a:hover::after {
 
 footer {
     background-color: var(--red-color);
-    /* background-image: url('../images/fanshawe-nortstar-white.svg');
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-size: cover;*/
     color: white; 
     display: flex;
     flex-direction: column;
     box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
-    /* position: relative; */
+    position: relative;
+    padding: 20px;
 }
 
-.bacground-image {
-    background-image: url('../images/fanshawe-nortstar-white.svg');
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-size: contain;
-    width: 100%;
-}
-/* footer::after {
+footer::after {
     content: "";
-    position: re;
-    inset: 0;
     background-image: url('../images/fanshawe-nortstar-white.svg');
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-position-x: -40%;
+    background-size: contain;
     opacity: 0.5; 
-    pointer-events: none;
-} */
+}
 
 footer .fanshawe{
-    font-size: 0.9em;
-    color: var(--gray-color);
     position: absolute;
-    margin-top: -70px;
-    margin-left: 25%;
+    top: 10px;
+    right: 50%;
+    margin-left: -25%;
+    color: var(--gray-color);
 }
 
 footer p {

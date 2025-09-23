@@ -22,37 +22,36 @@
 
 <body class="site">
   <!-- header section -->
-  <header class="head">
-    <h1 class="hidden">Industry Night Event</h1>
-    <div class="one-item sm-three-items md-three-items lg-three-items">
-      <!-- Logo Site Title -->
-      <div class="logo">
-        <a href="index.html">
-          <!-- <img src="images/primary-allwhite.svg" alt="Industry Night Logo"> -->
-          <object data="images/primary-allwhite.svg" type="image/svg+xml"></object>
-          <span class="hidden">Industry Night</span>
-        </a>
-      </div>
-      <div class="nav-menu">
-        <!-- Hamburger Button -->
-        <button id="menu-btn" aria-controls="main-nav" aria-expanded="false">
-          <!-- Hamburger Icon -->
-          <img src="images/svgs/industry-hamburger.svg" alt="Menu">
-        </button>
+    <header class="head">
+      <h1 class="hidden">Industry Night Event</h1>
+      <div class="two-items sm-three-items md-three-items lg-three-items">
+        <!-- Logo Site Title -->
+        <div class="logo">
+          <a href="index.html">
+            <object data="images/primary-allwhite.svg" type="image/svg+xml"></object>
+            <span class="hidden">Industry Night</span>
+          </a>
+        </div>
+        <div class="nav-menu">
+          <!-- Hamburger Button -->
+          <button id="menu-btn" class="hamburger">
+            <!-- Hamburger Icon -->
+             <object data="images/svgs/industry-hamburger.svg" type="image/svg+xml" class="menuIcon"></object>
+          </button>
 
-        <!-- Navigation -->
-        <nav id="main-nav" aria-label="Main navigation">
-          <h2 class="hidden">Navigation bar</h2>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolios.html">Portfolio</a></li>
-          </ul>
-        </nav>
+          <!-- Navigation -->
+          <nav id="main-nav">
+            <h2 class="hidden">Navigation bar</h2>
+            <ul class="menu">
+              <li><a href="index.html" class="menu-item">Home</a></li>
+              <li><a href="portfolios.html" class="menu-item">Portfolio</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <!-- Fanshawe Link -->
       <a href="https://fanshawe.ca" target="_blank" class="fanshawe">fanshawe.ca</a>
-    </div>
-  </header>
+    </header>
 
   <main class="main">
     <!-- portflio hero section  -->
@@ -77,25 +76,25 @@
     <!-- Portfolio student list  -->
     <section id="student-list">
       <div class="two-items sm-three-items md-four-items lg-four-items">
-        <div class="student-card">
+        <div class="student-card creator-box">
           <h2>Student Name 1</h2>
           <p>Developer/Designer Etc.</p>
           <img src="images/student-portfolio.jpg" alt="Student Name Portfolio Image Placeholder 1">
           <a href="#">View Portfolio</a>
         </div>
-        <div class="student-card">
+        <div class="student-card creator-box">
           <h2>Student Name 2</h2>
           <p>Developer/Designer Etc.</p>
           <img src="images/student-portfolio.jpg" alt="Student Name Portfolio Image Placeholder 2">
           <a href="#">View Portfolio</a>
         </div>
-        <div class="student-card">
+        <div class="student-card creator-box">
           <h2>Student Name 3</h2>
           <p>Developer/Designer Etc.</p>
           <img src="images/student-portfolio.jpg" alt="Student Name Portfolio Image Placeholder 3">
           <a href="#">View Portfolio</a>
         </div>
-        <div class="student-card">
+        <div class="student-card creator-box">
           <h2>Student Name 4</h2>
           <p>Developer/Designer Etc.</p>
           <img src="images/student-portfolio.jpg" alt="Student Name Portfolio Image Placeholder 4">
@@ -106,36 +105,36 @@
   </main>
 
   <!-- footer section  -->
-  <footer class="foot">
-    <div class="one-item sm-one-item md-one-item lg-one-item">
-      <div>
-        <nav id="footer-nav" aria-label="Main navigation">
-          <h2 class="hidden">Navigation bar</h2>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolios.html">Portfolio</a></li>
-          </ul>
-        </nav>
-        <a href="https://fanshawe.ca" class="fanshawe">visit fanshawe.ca</a>
-        <p>
-          <span>137 Dundas St,</span><br>
-          London, ON, Canada <br>
-          N6A 1G3
-        </p>
-        <p>
-          <span>Fanshawe College, IDP3</span><br>
-          &copy; 2026 all rights reserved.
-        </p>
+    <footer class="foot" id="foot">
+      <div class="one-item sm-one-item md-one-item lg-one-item">
+        <div>
+          <nav id="footer-nav" aria-label="Main navigation">
+            <h2 class="hidden">Navigation bar</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolios.html">Portfolio</a></li>
+            </ul>
+          </nav>
+          <a href="https://fanshawe.ca" class="fanshawe">visit fanshawe.ca</a>
+          <p>
+            <span>137 Dundas St,</span><br />
+            London, ON, Canada <br />
+            N6A 1G3
+          </p>
+          <p>
+            <span>Fanshawe College, IDP3</span><br />
+            &copy; 2026 all rights reserved.
+          </p>
+        </div>
+        <div>
+          <h2>Stay connected</h2>
+          <a href="https://www.facebook.com/FanshaweCollege/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://x.com/fanshawecollege?lang=en"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/school/fanshawe-college/posts/?feedView=all"><i  class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/fanshawecollege/?hl=en"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
-      <div>
-        <h2>Stay connected</h2>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
   <script src="js/script.js"></script>
 </body>
