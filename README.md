@@ -27,10 +27,10 @@ To use open index.html in the browser of your choice
 TODO: Write history
 
 ## Credits
-- Armstrong, Amy
-- Muncaster, Josephine
-- Seif, Laila
-- Sultana, Zakia
+- Armstrong, Amy - Graphic Designer
+- Muncaster, Josephine - Motion Designer
+- Seif, Laila - Project Manager & Graphic Designer
+- Sultana, Zakia - Main Developer
 
 ## License
 See the license file.
