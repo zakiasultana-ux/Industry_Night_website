@@ -81,7 +81,7 @@ body {
 /* 03. Header styles */
 
 header {
-    background-color: var(--dark-red-color);
+    background-color: var(--red-color);
     color: white;
     position: sticky;
     top: 0;
@@ -126,7 +126,6 @@ header {
     transform: translateY(-100%);
     transition: transform 0.2s;
     z-index: 99;
-    background-color: var(--dark-red-color);
 }
 
 .menu li {
@@ -276,8 +275,8 @@ header {
 }
 
 #event video {
-    width: 200em;
-    height: 100%;
+    width: 220em;
+    height: 25em;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -297,7 +296,7 @@ header {
 }
 
 .event-details img {
-    height: 20px;
+    height: 24px;
     width: auto;
     vertical-align: middle;
     margin-right: 10px;
@@ -332,6 +331,8 @@ header {
     background-size: cover;
     background-position: center;
     width: 250px;
+    padding: 5px;
+    margin-top: 32px;
 }
 
 .save-the-date p {
@@ -346,7 +347,7 @@ header {
 /* 05-a. vertical line styles */
 
 .vertical-line {
-    border-left: 2px solid var(--red-color);
+    border-left: 2px solid var(--dark-red-color);
     width: 250px;
     margin: 10px 0px;
 }
@@ -355,7 +356,7 @@ header {
 
 .horizontal-line {
     border: none;
-    border-top: 10px solid var(--red-color);
+    border-top: 10px solid var(--dark-red-color);
 }
 
 /* 06. Client section styles */
@@ -383,7 +384,7 @@ header {
 
 #client img {
     width: 100%;
-    height: 95%;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -606,7 +607,6 @@ header {
     background-position: center;
     background-size: 100% 140%;
     width: 100%;
-    margin-top: -5px;
 }
 
 .creator-text h3 {
@@ -616,6 +616,7 @@ header {
     padding-left: 10px;
     font-weight: bold;
 }
+
 
 .creator-text p {
     letter-spacing: 0px;
@@ -646,21 +647,23 @@ header {
     background-image: url(../images/Pattern-grey-on-white.jpg);
     background-size: cover;
     background-position: center;
-    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     text-align: center;
 }
 
 #portfolio h2, #portfolio1 h2 {
     font-size: 3.5em;
     font-weight: bold;
-    color: var(--dark-red-color);
+    color: var(--red-color);
     text-transform: uppercase;
 }
 
 #portfolio p {
     color: var(--dark-gray-color);
-    font-size: 2.5em;
+    font-size: 2em;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 #portfolio a {
@@ -669,7 +672,7 @@ header {
     padding: 15px;
     font-size: 1.5em;
     margin-top: 40px;
-    margin-left: 40%;
+    margin-left: 35%;
     width: 30%;
     border-radius: 20px;
 }
@@ -704,7 +707,7 @@ footer .fanshawe{
     top: 10px;
     right: 50%;
     margin-left: -25%;
-    color: var(--gray-color);
+    color: var(--dark-gray-color);
 }
 
 footer p {
@@ -723,6 +726,11 @@ footer h2 {
 
 footer a {
     margin: 10px;
+}
+
+footer li{
+    text-transform: uppercase;
+    font-size: 1.25em;
 }
 
 /* **********Portfolio page*************** */
