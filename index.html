@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Industry Night Site</title>
 
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/xmm7wfp.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/xmm7wfp.css">
 
     <!-- font awesome  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+   >
 
     <!-- style sheet  -->
-    <link rel="stylesheet" href="css/grid.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="site">
@@ -63,10 +63,10 @@
           <h2>You're Invited</h2>
           <div>
             <p>
-              to the 2026 <br /><span class="highlight">Industry Night</span>
+              to the 2026 <br><span class="highlight">Industry Night</span>
             </p>
             <p>
-              join us showcasing this year's works by Fanshawe's <br />
+              join us showcasing this year's works by Fanshawe's <br>
               passionate <span>Interactive Media and UX Design</span> students!
             </p>
           </div>
@@ -80,19 +80,35 @@
         <div class="two-item sm-two-items md-two-items lg-two-items">
           <!-- Video -->
           <div>
-            <video controls>
-              <source src="#" type="video/mp4" />
-              Your browser does not support the video tag.
+            <video controls preload="metadata" poster="images/styleframes/styleframe-2.jpg">
+                <!-- controls - shows default browser controls like play, pause, etc. -->
+                <source src="#" type="video/mp4">
+                <source src="#" type="video/webm">
+                <p>You are using an older browser that does not support HTML5 Video. Please update your browser.</p>
             </video>
+            <div class="video-controls hidden" id="video-controls">
+                <button id="play-button">
+                    <i class="fa fa-play-circle-o"></i>
+                </button>
+                <button id="pause-button">
+                    <i class="fa fa-pause-circle-o"></i>
+                </button>
+                <button id="stop-button">
+                    <i class="fa fa-stop-circle-o"></i>
+                </button>
+                <i class="fa fa-volume-up"></i>
+                <input type="range" id="change-vol" step="0.05" min="0" max="1" value="1">
+                <button id="full-screen">
+                    <i class="fa fa-arrows-alt"></i>
+                </button>
+            </div>
           </div>
 
           <!-- Text -->
-          <div
-            class="event-details two-items sm-two-items md-two-items lg-two-items"
-          >
+          <div class="event-details two-items sm-two-items md-two-items lg-two-items">
             <div>
               <div>
-                <img src="images/svgs/industry-calendar.svg" alt="Date Icon" />
+                <img src="images/svgs/industry-calendar.svg" alt="Date Icon">
                 <h2>Date</h2>
                 <div class="vertical-line">
                   <h3>April 24th, 2025</h3>
@@ -100,7 +116,7 @@
                 </div>
               </div>
               <div>
-                <img src="images/svgs/industry-location.svg" alt="Place Icon" />
+                <img src="images/svgs/industry-location.svg" alt="Place Icon">
                 <h2>Place</h2>
                 <div class="vertical-line">
                   <h3>137 Dundas St.</h3>
@@ -116,7 +132,7 @@
                 <img
                   src="images/svgs/industry-clock.svg"
                   alt="Itinerary Icon"
-                />
+               >
                 <h2>Itinerary</h2>
                 <div class="vertical-line">
                   <h3>4PM - 6PM</h3>
@@ -148,20 +164,17 @@
               To honor one of London's last remaining wartime structures, Level
               4 students created a digital experience showcasing the 427
               (London) Wing Bulding.
-              <br /><br />
+              <br><br>
               Their work combines historical archives, interactive storytelling,
               and design to inform the public and encourage preservation
               efforts.
-              <br /><br />
+              <br><br>
               IDP3 students were tasked to (brief on what we did for client work
               so users know why we are even mentioning this)
             </p>
           </div>
           <div>
-            <img
-              src="images/industry-night-photography/DSC00967.jpg"
-              alt="Client Image"
-            />
+            <img src="images/industry-night-photography/DSC00967.jpg" alt="Client Image">
           </div>
         </div>
       </section>
@@ -177,9 +190,9 @@
             <img
               src="images/industry-night-photography/idp-5.jpg"
               alt="testimonial person"
-            />
+           >
             <h3>
-              – Alex Johnson <br /><span
+              – Alex Johnson <br><span
                 >IDP/UX professor @ Fanshawe Downtown campus</span
               >
             </h3>
@@ -202,7 +215,7 @@
           </div>
         </div>
       </section>
-      <hr class="horizontal-line" />
+      <hr class="horizontal-line">
       <!-- Program Section -->
       <section id="program">
         <h3 class="hidden">Program Overview</h3>
@@ -211,15 +224,15 @@
             <img
               src="images/industry-night-photography/DSC01047.jpg"
               alt="program image"
-            />
+           >
             <img
               src="images/industry-night-photography/DSC01039.jpg"
               alt="program image"
-            />
+           >
             <img
               src="images/industry-night-photography/DSC00978.jpg"
               alt="program image"
-            />
+           >
           </div>
           <div class="program-text">
             <h2>Interested in this <span>Awesome</span> Program?</h2>
@@ -267,7 +280,7 @@
           <p>Designers & Developers of this Website</p>
           <div class="two-items sm-four-items md-four-items lg-four-items">
             <div class="creator-box">
-              <img src="images/creator-1.jpg" alt="Portrait of Creator 1" />
+              <img src="images/creator-1.jpg" alt="Portrait of Creator 1">
               <div class="creator-text">
                 <h3>Josephine Muncaster</h3>
                 <p>Role: Motion Designer</p>
@@ -277,7 +290,7 @@
               </div>
             </div>
             <div class="creator-box">
-              <img src="images/creator-2.jpg" alt="Portrait of Creator 2" />
+              <img src="images/creator-2.jpg" alt="Portrait of Creator 2">
               <div class="creator-text">
                 <h3>Amy Armstrong</h3>
                 <p>Role: Designer</p>
@@ -287,7 +300,7 @@
               </div>
             </div>
             <div class="creator-box">
-              <img src="images/creator-3.jpg" alt="Portrait of Creator 3" />
+              <img src="images/creator-3.jpg" alt="Portrait of Creator 3">
               <div class="creator-text">
                 <h3>Laila Seif</h3>
                 <p>Role: Manager/Designer</p>
@@ -297,7 +310,7 @@
               </div>
             </div>
             <div class="creator-box">
-              <img src="images/creator-4.jpg" alt="Portrait of Creator 4" />
+              <img src="images/creator-4.jpg" alt="Portrait of Creator 4">
               <div class="creator-text">
                 <h3>Zakia Sultana</h3>
                 <p>Role: Developer</p>
@@ -333,12 +346,12 @@
           </nav>
           <a href="https://fanshawe.ca" class="fanshawe">visit fanshawe.ca</a>
           <p>
-            <span>137 Dundas St,</span><br />
-            London, ON, Canada <br />
+            <span>137 Dundas St,</span><br>
+            London, ON, Canada <br>
             N6A 1G3
           </p>
           <p>
-            <span>Fanshawe College, IDP3</span><br />
+            <span>Fanshawe College, IDP3</span><br>
             &copy; 2026 all rights reserved.
           </p>
         </div>
