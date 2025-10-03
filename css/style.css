@@ -19,8 +19,7 @@ ___________________________________________ */
     03-b. Hamburger button styles
     03-c. Navigation styles
     03-d. fanshawe link style
-    03-e. @media queries
-    03-f. menu hover effect
+    03-e. menu hover effect
     04. Hero section styles
     05. Event section styles
     05-a. vertical line styles
@@ -31,17 +30,20 @@ ___________________________________________ */
     07-a. slider styles
     08. program section styles
     08-a. program text styles
+    08-b program images style 
     09. Creator section styles
     09-a. creator card styles
     09-b. creator text style
     10. portfolios style
     11. footer style
 
-    **********Portfolio page***************
+    ********** Portfolio page ***************
 
     01. portfolio style
     02. portfolio button style
     03. portfolio student list
+
+    *********** @media queries ***************
 ___________________________________________
 */
 
@@ -156,45 +158,7 @@ header {
     display: none;
 }
 
-/* 03-e. @media queries */
-
-@media screen and (min-width: 64em) {
-
-    .menu {
-        list-style: none;
-        display: flex;
-        margin-top: 30px;
-    }
-
-    #menu-btn {
-        display: none;
-    }
-
-    .nav-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 10px;
-    }
-
-    .fanshawe {
-        display: inline-block;
-        height: 40px;
-        width: auto;
-        padding-top: 20px;
-        padding-right: 100px;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: larger;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        right: 0;
-    }
-
-}
-
-/* 03-f. menu hover effect */
+/* 03-e. menu hover effect */
 
 .menu li > .menu-item {
   position: relative;
@@ -274,13 +238,7 @@ header {
     padding: 20px;
     background-color: var(--dark-gray-color);
     text-align: center;
-}
-
-#event video {
-    width: 220em;
-    height: 25em;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-left: 120px;
 }
 
 .event-details {
@@ -298,13 +256,14 @@ header {
 }
 
 .event-details img {
-    height: 24px;
+    height: 20px;
     width: auto;
     vertical-align: middle;
     margin-right: 10px;
 }
 
 .event-details h2 {
+    font-size: 1em;
     padding-left: 40px;
     margin-bottom: 20px;
     margin-top: -10px;
@@ -316,14 +275,14 @@ header {
 .event-details h3 {
     color: var(--red-color);
     margin-top: 10px;
-    font-size: 0.8em;
+    font-size: 0.5em;
     padding-left: 40px;
 }
 
 .event-details p {
     color: white;
     margin: 5px 0 0 40px;
-    font-size: 0.4em;
+    font-size: 0.3em;
     font-weight: lighter;
 }
 
@@ -333,12 +292,10 @@ header {
     background-size: cover;
     background-position: center;
     width: 250px;
-    padding: 5px;
-    margin-top: 32px;
 }
 
 .save-the-date p {
-    font-size: 0.7em;
+    font-size: 0.75em;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
@@ -349,7 +306,7 @@ header {
 /* 05-a. vertical line styles */
 
 .vertical-line {
-    border-left: 2px solid var(--dark-red-color);
+    border-left: 2px solid var(--red-color);
     width: 250px;
     margin: 10px 0px;
 }
@@ -358,13 +315,18 @@ header {
 
 .horizontal-line {
     border: none;
-    border-top: 10px solid var(--dark-red-color);
+    border-top: 10px solid var(--red-color);
 }
 
 /* 05-c. video style */
 
-video{
-    margin-top: -70px;
+
+#event video {
+    width: 400em;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2px;
 }
 
 #player-container {
@@ -478,7 +440,7 @@ input[type="range"]:focus::-moz-range-thumb{
 }
 
 #client h2 {
-    font-size: 2.3em;
+    font-size: 1.3em;
     text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: 2px;
@@ -486,14 +448,14 @@ input[type="range"]:focus::-moz-range-thumb{
 }
 
 #client p {
-    font-size: 1.2em;
+    font-size: 0.8em;
     margin-bottom: 20px;
     color: white;
 }
 
 #client img {
     width: 100%;
-    height: auto;
+    height: 95%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -675,6 +637,94 @@ input[type="range"]:focus::-moz-range-thumb{
     color: var(--red-color);
 }
 
+/* 08-b program images style  */
+
+/* .top .responsive-cell-block {
+  min-height: 75px;
+}
+
+.top .responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: flex-start;
+}
+
+.top .responsive-container-block.bigContainer {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.top .responsive-container-block.Container {
+  max-width: 1320px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+}
+
+.top .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12 {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.top .bigImg {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.top .responsive-container-block.sideImgContainer {
+  width: 50%;
+  height: auto;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.top .responsive-cell-block.wk-desk-12.wk-ipadp-12.wk-tab-12.wk-mobile-12.side {
+  height: 50%;
+  min-height: auto;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.top .sideImg {
+  color: black;
+  width: 100%;
+  height: 100%;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  object-fit: cover;
+} */
+
 /* 09. Creator section styles */
 
 #creator {
@@ -716,29 +766,29 @@ input[type="range"]:focus::-moz-range-thumb{
     background-position: center;
     background-size: 100% 140%;
     width: 100%;
+    margin-top: -5px;
 }
 
 .creator-text h3 {
     color: var(--dark-red-color);
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: left;
     padding-left: 10px;
     font-weight: bold;
 }
 
-
 .creator-text p {
     letter-spacing: 0px;
     text-align: left;
     padding-left: 10px;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 .view-portfolio {
     background-image: url('../images/bar-sm-red.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 82%;
+    width: 85%;
     margin-top: -22px;
     padding: 5px;
     text-align: left;
@@ -756,32 +806,30 @@ input[type="range"]:focus::-moz-range-thumb{
     background-image: url(../images/Pattern-grey-on-white.jpg);
     background-size: cover;
     background-position: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 20px;
     text-align: center;
 }
 
 #portfolio h2, #portfolio1 h2 {
     font-size: 3.5em;
     font-weight: bold;
-    color: var(--red-color);
+    color: var(--dark-red-color);
     text-transform: uppercase;
 }
 
 #portfolio p {
     color: var(--dark-gray-color);
-    font-size: 2em;
+    font-size: 2.5em;
     text-transform: uppercase;
-    font-weight: bold;
 }
 
 #portfolio a {
     background-color: var(--red-color);
     color: white;
     padding: 15px;
-    font-size: 1.5em;
+    font-size: 1em;
     margin-top: 40px;
-    margin-left: 35%;
+    margin-left: 40%;
     width: 30%;
     border-radius: 20px;
 }
@@ -800,15 +848,12 @@ footer {
     box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
     position: relative;
     padding: 20px;
-}
 
-footer::after {
     content: "";
     background-image: url('../images/fanshawe-nortstar-white.svg');
     background-repeat: no-repeat;
-    background-position-x: -40%;
-    background-size: contain;
-    opacity: 0.5; 
+    background-position-x: 100%;
+    background-size: 40%;
 }
 
 footer .fanshawe{
@@ -816,7 +861,7 @@ footer .fanshawe{
     top: 10px;
     right: 50%;
     margin-left: -25%;
-    color: var(--dark-gray-color);
+    color: var(--gray-color);
 }
 
 footer p {
@@ -835,11 +880,6 @@ footer h2 {
 
 footer a {
     margin: 10px;
-}
-
-footer li{
-    text-transform: uppercase;
-    font-size: 1.25em;
 }
 
 /* **********Portfolio page*************** */
@@ -876,9 +916,9 @@ footer li{
 }
 
 .active {
-    background-color: var(--dark-red-color) !important;
-    border: 2px solid white !important;
-    color: white !important;
+    background-color: var(--dark-red-color);
+    border: 2px solid white;
+    color: white;
 }
 
 /* 03. portfolio student list */
@@ -916,4 +956,105 @@ footer li{
     text-align: center;
     box-sizing: border-box;
     text-transform: uppercase;
+}
+
+/* 03-e. @media queries */
+
+@media screen and (min-width: 64em) {
+
+    .menu {
+        list-style: none;
+        display: flex;
+        margin-top: 30px;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .fanshawe {
+        display: inline-block;
+        height: 40px;
+        width: auto;
+        padding-top: 20px;
+        padding-right: 100px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: larger;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        right: 0;
+    }
+
+    .event-details h2 {
+    font-size: 2em;
+}
+
+.event-details h3 {
+    font-size: 0.6em;
+}
+
+.event-details p {
+    font-size: 0.4em;
+}
+
+
+.creator-text h3 {
+    font-size: 1.5em;
+}
+
+.creator-text p {
+    font-size: 1.3em;
+}
+
+.view-portfolio {
+    width: 82%;
+}
+
+#portfolio a{
+    font-size: 1.5em;
+}
+
+#event {
+    padding-left: 0px;
+}
+
+#event video {
+    border-radius: 50px;
+}
+
+#event hr{
+    display: none;
+}
+
+#client h2 {
+    font-size: 2.3em;
+}
+
+#client p {
+    font-size: 1.2em;
+}
+
+
+    /* .top .responsive-cell-block.wk-desk-12.wk-ipadp-12.wk-tab-12.wk-mobile-12.side {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+
+  .top .responsive-container-block.sideImgContainer {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  } */
+
 }

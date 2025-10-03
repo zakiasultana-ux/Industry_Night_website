@@ -5,6 +5,7 @@
     <style>
       .st0 {
         fill: #fff;
+        opacity: 0.5; 
       }
     </style>
   </defs>
