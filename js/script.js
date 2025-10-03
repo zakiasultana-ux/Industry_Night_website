@@ -2,22 +2,22 @@ console.log("welcome to the Industry Night website!");
 
 // variables
 
-const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
-const hamburger= document.querySelector(".hamburger");
-const playerCon = document.querySelector("#player-container");
-const player = document.querySelector("video");
-const videoControls = document.querySelector("#video-controls");
-const playButton = document.querySelector("#play-button");
-const pauseButton = document.querySelector("#pause-button");
-const stopButton = document.querySelector("#stop-button");
-const volumeSlider = document.querySelector("#change-vol");
-const fullScreen = document.querySelector("#full-screen");
+ const menu = document.querySelector(".menu"),
+    menuItems = document.querySelectorAll(".menuItem"),
+    hamburger= document.querySelector(".hamburger"),
+    playerCon = document.querySelector("#player-container"),
+    player = document.querySelector("video"),
+    videoControls = document.querySelector("#video-controls"),
+    playButton = document.querySelector("#play-button"),
+    pauseButton = document.querySelector("#pause-button"),
+    stopButton = document.querySelector("#stop-button"),
+    volumeSlider = document.querySelector("#change-vol"),
+    fullScreen = document.querySelector("#full-screen");
 
 // control
 
-// player.controls = false;
-// videoControls.classList.remove("hidden");
+player.controls = false;
+videoControls.classList.remove("hidden");
 
 // functions 
 
@@ -43,7 +43,7 @@ function pauseVideo() {
 function stopVideo() {
     console.log("stop video function called");
     player.pause();
-    player.currentTime = 1;// to avoid black screen, setting it to 1 sec instead of 0 sec 
+    player.currentTime = 1;
 }
 
 function changeVolume() {
@@ -54,12 +54,12 @@ function changeVolume() {
 
 function toggleFullScreen() {
     console.log("toggle full screen function called");
-    if(document.fullscreenElement) {// if already in full screen mode then exit. its similiar to writing if(document.fullscreenElement === true)
+    if(document.fullscreenElement) {
         console.log("exiting full screen");
         document.exitFullscreen();
     } else {
         console.log("entering full screen");
-        playerCon.requestFullscreen();// to make the whole player container full screen (not just video)
+        playerCon.requestFullscreen();
     }
 }
 
