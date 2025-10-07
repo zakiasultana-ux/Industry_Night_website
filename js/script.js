@@ -14,10 +14,23 @@ console.log("welcome to the Industry Night website!");
     volumeSlider = document.querySelector("#change-vol"),
     fullScreen = document.querySelector("#full-screen");
 
+    let skewSetter = gsap.quickTo("img", "skewY"),
+	  clamp = gsap.utils.clamp(-20, 20);
+
 // control
 
 player.controls = false;
 videoControls.classList.remove("hidden");
+
+ScrollSmoother.create({
+	wrapper: "#wrapper",
+	content: "#content",
+	smooth: 2,
+  speed: 3,
+	effects: true,
+	onUpdate: self => skewSetter(clamp(self.getVelocity() / -50)),
+	onStop: () => skewSetter(0)
+});
 
 // functions 
 

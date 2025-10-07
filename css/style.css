@@ -21,6 +21,7 @@ ___________________________________________ */
     03-d. fanshawe link style
     03-e. menu hover effect
     04. Hero section styles
+    04-a. hero section greensock
     05. Event section styles
     05-a. vertical line styles
     05-b. horizontal line styles
@@ -73,6 +74,8 @@ body {
     scroll-behavior: smooth;
     background-color: #f9f9f9;
     color: var(--dark-gray-color);
+    overscroll-behavior: none;
+    overflow-x: hidden;
 }
 
 *,
@@ -232,6 +235,115 @@ header {
     text-transform: uppercase;
 }
 
+/* 04-a. hero section greensock */
+
+/* #wrapper {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#content {
+  overflow: visible;
+  width: 100%;
+}
+
+.text {
+  position: fixed;
+  top: 50vh;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 8vw;
+  text-align: center;
+  width: 100%;
+  transform: translateY(-100%);
+  z-index: 2;
+  color: var(--dark-gray-color);
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+  z-index: -2;
+}
+
+.outline-text {
+  color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+  z-index: 2;
+}
+
+.filter-text {
+  mix-blend-mode: screen;
+  color: var(--red-color);
+  z-index: 2;
+}
+
+.images {
+  padding-top: 60vh;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 150vh;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(20, 2%);
+  grid-template-rows: repeat(30, 3%);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.content__slide-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img:nth-child(1) {
+  grid-area: 1/1/6/8;
+}
+
+img:nth-child(2) {
+  grid-area: 3/12/8/20;
+}
+
+img:nth-child(3) {
+  grid-area: 9/5/13/15;
+}
+
+img:nth-child(4) {
+  grid-area: 14/1/18/8;
+}
+
+img:nth-child(5) {
+  grid-area: 16/12/20/19;
+}
+
+img:nth-child(6) {
+  grid-area: 20/2/25/9;
+}
+
+img:nth-child(7) {
+  grid-area: 22/11/24/20;
+}
+
+img:nth-child(8) {
+  grid-area: 26/5/30/15;
+} */
+
 /* 05. Event section styles */
 
 #event {
@@ -295,7 +407,7 @@ header {
 }
 
 .save-the-date p {
-    font-size: 0.75em;
+    font-size: 0.7em !important;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
@@ -629,7 +741,7 @@ input[type="range"]:focus::-moz-range-thumb{
 
 .program-description p {
     text-align: left;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .program-description p span {
@@ -639,91 +751,13 @@ input[type="range"]:focus::-moz-range-thumb{
 
 /* 08-b program images style  */
 
-/* .top .responsive-cell-block {
-  min-height: 75px;
+.prog_img{
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
-
-.top .responsive-container-block {
-  min-height: 75px;
-  height: fit-content;
-  width: 100%;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  justify-content: flex-start;
-}
-
-.top .responsive-container-block.bigContainer {
-  padding-top: 10px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-}
-
-.top .responsive-container-block.Container {
-  max-width: 1320px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  margin-top: 50px;
-  margin-right: auto;
-  margin-bottom: 50px;
-  margin-left: auto;
-}
-
-.top .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12 {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-}
-
-.top .bigImg {
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-}
-
-.top .responsive-container-block.sideImgContainer {
-  width: 50%;
-  height: auto;
-  min-height: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-
-.top .responsive-cell-block.wk-desk-12.wk-ipadp-12.wk-tab-12.wk-mobile-12.side {
-  height: 50%;
-  min-height: auto;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-}
-
-.top .sideImg {
-  color: black;
-  width: 100%;
-  height: 100%;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  object-fit: cover;
-} */
 
 /* 09. Creator section styles */
 
@@ -916,9 +950,9 @@ footer a {
 }
 
 .active {
-    background-color: var(--dark-red-color);
-    border: 2px solid white;
-    color: white;
+    background-color: var(--dark-red-color) !important;
+    border: 2px solid white !important;
+    color: white !important;
 }
 
 /* 03. portfolio student list */
@@ -995,11 +1029,13 @@ footer a {
     }
 
     .event-details h2 {
-    font-size: 2em;
+    font-size: 1.2em;
+    margin-top: -10px;
 }
 
 .event-details h3 {
     font-size: 0.6em;
+    margin-top: 20px;
 }
 
 .event-details p {
