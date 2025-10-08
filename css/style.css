@@ -163,39 +163,39 @@ header {
 
 /* 03-e. menu hover effect */
 
-.menu li > .menu-item {
-  position: relative;
-  overflow: hidden;
+.menu li>.menu-item {
+    position: relative;
+    overflow: hidden;
 }
 
-.menu li > .menu-item::before,
-.menu li > .menu-item::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background: white;
-  transition: all 0.5s;
+.menu li>.menu-item::before,
+.menu li>.menu-item::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: all 0.5s;
 }
 
-.menu li > .menu-item::before {
-  top: 0;
-  left: 0;
+.menu li>.menu-item::before {
+    top: 0;
+    left: 0;
 }
 
-.menu li > .menu-item::after {
-  bottom: 0;
-  right: 0;
+.menu li>.menu-item::after {
+    bottom: 0;
+    right: 0;
 }
 
-.menu li > .menu-item:hover::before {
-  width: 100%;
-  transition: width 0.25s ease-in-out;
+.menu li>.menu-item:hover::before {
+    width: 100%;
+    transition: width 0.25s ease-in-out;
 }
 
-.menu li > .menu-item:hover::after {
-  width: 100%;
-  transition: width 0.25s ease-in-out 0.25s;
+.menu li>.menu-item:hover::after {
+    width: 100%;
+    transition: width 0.25s ease-in-out 0.25s;
 }
 
 /* 04. Hero section styles  */
@@ -457,12 +457,12 @@ img:nth-child(8) {
     left: 0;
     bottom: 90px;
     padding: 20px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
     display: flex;
     transition: all 0.2s ease-in-out;
 }
 
-.video-controls.hide{
+.video-controls.hide {
     opacity: 0;
     pointer-events: none;
 }
@@ -473,7 +473,8 @@ button {
     background-color: transparent;
 }
 
-.fa, .fa-solid {
+.fa,
+.fa-solid {
     color: var(--dark-red-color);
     font-size: 28px;
     margin-left: 20px;
@@ -482,64 +483,68 @@ button {
 .fa-volume-up {
     margin-left: auto;
 }
+
 /*********** Baseline, reset styles ***********/
 input[type="range"] {
-  -webkit-appearance: none;
-  appearance: none;
-  background: transparent;
-  cursor: pointer;
-  width: 5rem;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 5rem;
 }
 
 /* Removes default focus */
 input[type="range"]:focus {
-  outline: none;
+    outline: none;
 }
 
 /******** Chrome, Safari, Opera and Edge Chromium styles ********/
 /* slider track */
 input[type="range"]::-webkit-slider-runnable-track {
-  background-color: var(--dark-gray-color);
-  border-radius: 0.5rem;
-  height: 0.5rem;
+    background-color: var(--dark-gray-color);
+    border-radius: 0.5rem;
+    height: 0.5rem;
 }
 
 /* slider thumb */
 input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
-  appearance: none;
-  margin-top: -4px; /* Centers thumb on the track */
-  background-color: var(--red-color);
-  border-radius: 0.5rem;
-  height: 1rem;
-  width: 1rem;
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    margin-top: -4px;
+    /* Centers thumb on the track */
+    background-color: var(--red-color);
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
 }
 
 input[type="range"]:focus::-webkit-slider-thumb {
-  outline: 3px solid var(--dark-gray-color);
-  outline-offset: 0.125rem;
+    outline: 3px solid var(--dark-gray-color);
+    outline-offset: 0.125rem;
 }
 
 /*********** Firefox styles ***********/
 /* slider track */
 input[type="range"]::-moz-range-track {
-  background-color: var(--dark-red-color);
-  border-radius: 0.5rem;
-  height: 0.5rem;
+    background-color: var(--dark-red-color);
+    border-radius: 0.5rem;
+    height: 0.5rem;
 }
 
 /* slider thumb */
 input[type="range"]::-moz-range-thumb {
-  background-color: var(--dark-red-color);
-  border: none; /*Removes extra border that FF applies*/
-  border-radius: 0.5rem;
-  height: 1rem;
-  width: 1rem;
+    background-color: var(--dark-red-color);
+    border: none;
+    /*Removes extra border that FF applies*/
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
 }
 
-input[type="range"]:focus::-moz-range-thumb{
-  outline: 3px solid var(--dark-red-color);
-  outline-offset: 0.125rem;
+input[type="range"]:focus::-moz-range-thumb {
+    outline: 3px solid var(--dark-red-color);
+    outline-offset: 0.125rem;
 }
 
 /* 06. Client section styles */
@@ -589,7 +594,7 @@ input[type="range"]:focus::-moz-range-thumb{
     color: var(--dark-red-color);
 }
 
-#testimonials p {
+#testimonials .testimonial-sub-heading {
     font-size: 1.7em;
     margin-bottom: 30px;
     color: var(--dark-gray-color);
@@ -597,43 +602,75 @@ input[type="range"]:focus::-moz-range-thumb{
     font-weight: bold;
 }
 
-#testimonials img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.testimonial-container {
+  width: 85%;
+  max-width: 56rem;
+  padding: 2rem;
 }
-
-#testimonials h3 {
-    font-size: 1.2em;
-    margin-top: 15px;
-    color: var(--dark-red-color);
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: left;
+.testimonial-grid {
+  display: grid;
+  gap: 5rem;
 }
-
-#testimonials h3 span {
-    font-size: 1em;
-    color: var(--gray-color);
-    text-transform: none;
-    font-weight: normal;
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 24rem;
+  perspective: 1000px;
 }
-
-.testimonial-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20%;
-    margin-left: 50px;
-    text-align: center;
-    color: var(--dark-gray-color);
+.testimonial-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
-
-.testimonial-text h4 {
-    font-size: 1.6em;
-    line-height: 1.5;
-    text-transform: capitalize;
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.name {
+    color: var(--red-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+.designation {
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+}
+.quote {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+.arrow-buttons {
+  display: flex;
+  gap: 1rem;
+  padding-top: 3rem;
+}
+.arrow-button {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background-color: var(--red-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.arrow-button:hover {
+  background-color: var(--dark-red-color);
+}
+.arrow-button svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: #f1f1f7;
+  transition: transform 0.3s ease-in-out;
+}
+.arrow-button:hover svg {
+  fill: #ffffff;
 }
 
 /* 07-a. slider styles */
@@ -693,6 +730,7 @@ input[type="range"]:focus::-moz-range-thumb{
     max-width: 600px;
     margin: 0 auto;
 }
+
 .program-text h2 {
     font-size: 1.19em;
     text-transform: uppercase;
@@ -751,7 +789,7 @@ input[type="range"]:focus::-moz-range-thumb{
 
 /* 08-b program images style  */
 
-.prog_img{
+.prog_img {
     margin: 10px;
     width: 100%;
     height: auto;
@@ -834,9 +872,15 @@ input[type="range"]:focus::-moz-range-thumb{
     padding-left: 10px;
 }
 
+.view-portfolio a:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
 /* 10. portfolios style */
 
-#portfolio, #portfolio1 {
+#portfolio,
+#portfolio1 {
     background-image: url(../images/Pattern-grey-on-white.jpg);
     background-size: cover;
     background-position: center;
@@ -844,7 +888,8 @@ input[type="range"]:focus::-moz-range-thumb{
     text-align: center;
 }
 
-#portfolio h2, #portfolio1 h2 {
+#portfolio h2,
+#portfolio1 h2 {
     font-size: 3.5em;
     font-weight: bold;
     color: var(--dark-red-color);
@@ -862,6 +907,8 @@ input[type="range"]:focus::-moz-range-thumb{
     color: white;
     padding: 15px;
     font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 2px;
     margin-top: 40px;
     margin-left: 40%;
     width: 30%;
@@ -876,7 +923,7 @@ input[type="range"]:focus::-moz-range-thumb{
 
 footer {
     background-color: var(--red-color);
-    color: white; 
+    color: white;
     display: flex;
     flex-direction: column;
     box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.5);
@@ -890,7 +937,7 @@ footer {
     background-size: 40%;
 }
 
-footer .fanshawe{
+footer .fanshawe {
     position: absolute;
     top: 10px;
     right: 50%;
@@ -928,7 +975,7 @@ footer a {
 
 /* 02. portfolio button style */
 
-.protfolio-button{
+.protfolio-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -944,7 +991,7 @@ footer a {
     margin: 0px 10px;
 }
 
-.protfolio-button button:hover{
+.protfolio-button button:hover {
     border: 2px solid var(--dark-red-color);
     color: var(--dark-red-color);
 }
@@ -957,7 +1004,7 @@ footer a {
 
 /* 03. portfolio student list */
 
-#student-list{
+#student-list {
     background-color: var(--dark-gray-color);
     padding: 20px;
 }
@@ -990,6 +1037,11 @@ footer a {
     text-align: center;
     box-sizing: border-box;
     text-transform: uppercase;
+}
+
+.student-card a:hover{
+    background-color: var(--dark-red-color);
+    color: var(--gray-color);
 }
 
 /* 03-e. @media queries */
@@ -1029,68 +1081,54 @@ footer a {
     }
 
     .event-details h2 {
-    font-size: 1.2em;
-    margin-top: -10px;
-}
+        font-size: 1.2em;
+        margin-top: -10px;
+    }
 
-.event-details h3 {
-    font-size: 0.6em;
-    margin-top: 20px;
-}
+    .event-details h3 {
+        font-size: 0.6em;
+        margin-top: 20px;
+    }
 
-.event-details p {
-    font-size: 0.4em;
-}
-
-
-.creator-text h3 {
-    font-size: 1.5em;
-}
-
-.creator-text p {
-    font-size: 1.3em;
-}
-
-.view-portfolio {
-    width: 82%;
-}
-
-#portfolio a{
-    font-size: 1.5em;
-}
-
-#event {
-    padding-left: 0px;
-}
-
-#event video {
-    border-radius: 50px;
-}
-
-#event hr{
-    display: none;
-}
-
-#client h2 {
-    font-size: 2.3em;
-}
-
-#client p {
-    font-size: 1.2em;
-}
+    .event-details p {
+        font-size: 0.4em;
+    }
 
 
-    /* .top .responsive-cell-block.wk-desk-12.wk-ipadp-12.wk-tab-12.wk-mobile-12.side {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-  }
+    .creator-text h3 {
+        font-size: 1.5em;
+    }
 
-  .top .responsive-container-block.sideImgContainer {
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  } */
+    .creator-text p {
+        font-size: 1.3em;
+    }
+
+    .view-portfolio {
+        width: 82%;
+    }
+
+    #portfolio a {
+        font-size: 1.5em;
+    }
+
+    #event {
+        padding-left: 0px;
+    }
+
+    #event video {
+        border-radius: 50px;
+    }
+
+    #event hr {
+        display: none;
+    }
+
+    #client h2 {
+        font-size: 2.3em;
+    }
+
+    #client p {
+        font-size: 1.2em;
+    }
 
 }

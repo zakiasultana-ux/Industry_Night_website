@@ -96,7 +96,7 @@
     <!-- Event Section -->
     <section id="event">
       <h2 class="hidden">Event Section</h2>
-      <div class="sm-two-items md-two-items lg-two-items">
+      <div class="md-two-items lg-two-items">
         <!-- Video -->
         <div>
           <video controls preload="metadata" poster="images/styleframes/styleframe-2.jpg">
@@ -198,28 +198,31 @@
     <section id="testimonials">
       <div class="one-item sm-one-item md-one-item lg-one-item">
         <h2>Testimonials</h2>
-        <p>Hear more from the experienced</p>
+        <p class="testimonial-sub-heading">Hear more from the experienced</p>
       </div>
       <div class="two-items sm-two-items md-two-items lg-two-items">
-        <div>
-          <img src="images/industry-night-photography/idp-5.jpg" alt="testimonial person">
-          <h3>
-            – Alex Johnson <br><span>IDP/UX professor @ Fanshawe Downtown campus</span>
-          </h3>
+        <div class="testimonial-container">
+          <div class="testimonial-grid">
+            <div class="image-container" id="image-container"></div>
+          </div>
         </div>
-
-        <!-- testimonial text -->
-        <div class="testimonial-text">
-          <h4>
-            <q>
-              This event was a game-changer for my career. The networking
-              opportunities were invaluable.</q>
-          </h4>
-          <!-- Slider Container -->
-          <div class="slider-container">
-            <i class="fa fa-angle-double-left"></i>
-            <p>4/4</p>
-            <i class="fa fa-angle-double-right"></i>
+        <div class="testimonial-content">
+          <div>
+            <h3 class="name" id="name"></h3>
+            <p class="designation" id="designation"></p>
+            <p class="quote" id="quote"></p>
+          </div>
+          <div class="arrow-buttons">
+            <button class="arrow-button prev-button" id="prev-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+              </svg>
+            </button>
+            <button class="arrow-button next-button" id="next-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -339,14 +342,6 @@
   <footer class="foot" id="foot">
     <div class="one-item sm-one-item md-one-item lg-one-item">
       <div>
-        <!-- <nav id="footer-nav" aria-label="Main navigation">
-            <h2 class="hidden">Navigation bar</h2>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="portfolios.html">Portfolio</a></li>
-            </ul>
-          </nav>
-          <a href="https://fanshawe.ca" class="fanshawe">visit fanshawe.ca</a> -->
         <p>
           <span>137 Dundas St,</span><br>
           London, ON, Canada <br>
