@@ -42,7 +42,7 @@
         <!-- Hamburger Button -->
         <button id="menu-btn" class="hamburger">
           <!-- Hamburger Icon -->
-          <object data="images/svgs/industry-hamburger.svg" type="image/svg+xml" class="menuIcon"></object>
+          <img src="images/industry-menu.svg" alt="hamburger menu" class="menuIcon">
         </button>
 
         <!-- Navigation -->
@@ -65,22 +65,6 @@
       <div class="one-item sm-one-item md-one-item lg-one-item">
         <!-- Hero Text -->
         <h2 class="text">You're Invited</h2>
-        <!-- <h2 aria-hidden="true" class="text outline-text">You're Invited</h2>
-        <h2 aria-hidden="true" class="text filter-text">You're Invited</h2>
-        <div id="wrapper">
-          <section id="content">
-            <section class="images">
-              <img data-speed="0.8" src="images/industry-night-photography/2024-04-05-Interactive-Media-Design-SILex-Presentations-HC-10.jpg" alt="industry night images">
-              <img data-speed="0.8" src="images/industry-night-photography/2024-04-05-Interactive-Media-Design-SILex-Presentations-HC-2.jpg" alt="industry night images">
-              <img data-speed="0.8" src="images/industry-night-photography/2024-04-05-Interactive-Media-Design-SILex-presentations-TC-30.jpg" alt="industry night images">
-              <img data-speed="0.8" src="images/industry-night-photography/2024-04-05-Interactive-Media-Design-SILex-presentations-TC-30.jpg" alt="industry night images">
-              <img data-speed="0.8" src="images/industry-night-photography/2024-04-05-Interactive-Media-Design-SILex-presentations-TC-55.jpg" alt="industry night images">
-              <img data-speed="0.8" src="images/industry-night-photography/2024-04-05-Interactive-Media-Design-SILex-presentations-TC-60.jpg" alt="industry night images">
-              <img data-speed="0.8" src="images/industry-night-photography/20240418_171005.jpg" alt="industry night images">
-              <img data-speed="0.8" src="images/industry-night-photography/DSC00464_copy.jpg" alt="industry night images">
-            </section>
-          </section>
-        </div> -->
         <div>
           <p>
             to the 2026 <br><span class="highlight">Industry Night</span>
@@ -98,10 +82,10 @@
       <h2 class="hidden">Event Section</h2>
       <div class="md-two-items lg-two-items">
         <!-- Video -->
-        <div>
+        <div id="player-container">
           <video controls preload="metadata" poster="images/styleframes/styleframe-2.jpg">
-            <source src="#" type="video/mp4">
-            <source src="#" type="video/webm">
+            <source src="video/INS_Motion_Video.mp4" type="video/mp4">
+            <!-- <source src="#" type="video/webm"> -->
             <p>You are using an older browser that does not support HTML5 Video. Please update your browser.</p>
           </video>
           <div class="video-controls hidden" id="video-controls">
@@ -169,7 +153,7 @@
       </div>
     </section>
     <!-- Client Section -->
-    <section id="client">
+    <section id="client" class="client-bg">
       <h2 class="one-item sm-one-item md-one-item lg-one-item">
         Royal Canadian Air Forces Association (Local 427 Wing)
       </h2>
@@ -200,7 +184,7 @@
         <h2>Testimonials</h2>
         <p class="testimonial-sub-heading">Hear more from the experienced</p>
       </div>
-      <div class="two-items sm-two-items md-two-items lg-two-items">
+      <div class="one-item sm-one-item md-two-items lg-two-items">
         <div class="testimonial-container">
           <div class="testimonial-grid">
             <div class="image-container" id="image-container"></div>
@@ -231,19 +215,24 @@
     <!-- Program Section -->
     <section id="program">
       <h3 class="hidden">Program Overview</h3>
-      <div class="two-items sm-two-items md-two-items lg-two-items">
+      <div class="one-item sm-one-item md-two-items lg-two-items">
         <div>
           <div class="one-item sm-one-item md-one-item lg-one-item">
-            <div class="two-items sm-two-items md-two-items lg-two-items">
+            <div class="two-items sm-two-items md-two-items lg-two-items prog-gallary">
               <div>
-                <img src="images/industry photos/industry_marco.png" alt="marco" class="prog_img">
+                <div>
+                  <img src="images/industry-night-photography/idp-5.jpg" alt="industry photo" class="prog_img">
+                </div>
+                <div>
+                  <img src="images/industry-night-photography/DSC00505_copy.jpg" alt="industry photo" class="prog_img">
+                </div>
               </div>
               <div>
                 <div>
-                  <img src="images/industry photos/industry_justin.png" alt="justin" class="prog_img">
+                  <img src="images/industry_photos/industry_justin.png" alt="justin" class="prog_img">
                 </div>
                 <div>
-                  <img src="images/industry photos/industry_photo1.png" alt="industry photo" class="prog_img">
+                  <img src="images/industry_photos/industry_photo1.png" alt="industry photo" class="prog_img">
                 </div>
               </div>
             </div>
@@ -285,40 +274,40 @@
         <p>Designers & Developers of this Website</p>
         <div class="two-items sm-four-items md-four-items lg-four-items">
           <div class="creator-box">
-            <img src="images/creator-1.jpg" alt="Portrait of Creator 1">
+            <img src="images/industry_headshots/jo_headshot.png" alt="Josephine Muncaster">
             <div class="creator-text">
               <h3>Josephine Muncaster</h3>
-              <p>Role: Motion Designer</p>
+              <p>Motion Designer</p>
             </div>
             <div class="view-portfolio">
               <a href="#">View Portfolio</a>
             </div>
           </div>
           <div class="creator-box">
-            <img src="images/creator-2.jpg" alt="Portrait of Creator 2">
+            <img src="images/industry_headshots/amy_headshot.png" alt="Amy Armstrong">
             <div class="creator-text">
               <h3>Amy Armstrong</h3>
-              <p>Role: Designer</p>
+              <p>Designer</p>
             </div>
             <div class="view-portfolio">
               <a href="#">View Portfolio</a>
             </div>
           </div>
-          <div class="creator-box">
-            <img src="images/creator-3.jpg" alt="Portrait of Creator 3">
+          <div class="creator-box mt-24 md:mt-0">
+            <img src="images/industry_headshots/laila_headshot.png" alt="Laila Seif">
             <div class="creator-text">
               <h3>Laila Seif</h3>
-              <p>Role: Manager/Designer</p>
+              <p>Manager/Designer</p>
             </div>
             <div class="view-portfolio">
               <a href="#">View Portfolio</a>
             </div>
           </div>
-          <div class="creator-box">
-            <img src="images/creator-4.jpg" alt="Portrait of Creator 4">
+          <div class="creator-box mt-24 md:mt-0">
+            <img src="images/industry_headshots/zakia_headshot.png" alt="Zakia Sultana">
             <div class="creator-text">
               <h3>Zakia Sultana</h3>
-              <p>Role: Developer</p>
+              <p>Developer</p>
             </div>
             <div class="view-portfolio">
               <a href="#">View Portfolio</a>

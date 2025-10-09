@@ -1,5 +1,9 @@
 console.log("welcome to the Industry Night website!");
 
+// greensock plug in 
+
+gsap.registerPlugin(ScrollTrigger,ScrollSmoother,ScrollToPlugin);
+
 // variables
 
 const menu = document.querySelector(".menu"),
@@ -25,25 +29,30 @@ let activeIndex = 0;
 
 const testimonials = [
     {
-        quote: "I was impressed by the food — every dish is bursting with flavor! And I could really tell that they use high-quality ingredients. The staff was friendly and attentive, going the extra mile. I'll definitely be back for more!",
-        name: "Tamar Mendelson",
-        designation: "Restaurant Critic",
-        src: "images/industry-night-photography/DSC01047.jpg",
+        quote: "Watching the students collaborate as mini studios is truly inspiring. They draw on everything they’ve learned over four levels to bring real client projects to life. Each year, I’m impressed by the creativity, professionalism, and originality they bring to their work!",
+        name: "Marco DeLuca",
+        designation: "IDP3 Professor, Program Coordinator",
+        src: "images/industry_photos/industry_marco.png",
     },
     {
-        quote: "This place exceeded all expectations! The atmosphere is inviting, and the staff truly goes above and beyond to ensure a fantastic visit. I'll definitely keep returning for more exceptional dining experience.",
-        name: "Joe Charlescraft",
-        designation: "Frequent Visitor",
+        quote: "Industry Night belongs to the students. It is the combined effort of everything that they have been working toward for the past two years while in IDP. It is an extraordinary showcase of talent, abilities and the vast knowledge of each learner across an entire cohort of extraordinary people. All the best to our grads! It is your time to shine.",
+        name: "Jarrod",
+        designation: "IDP Design Instructor",
         src: "images/industry-night-photography/DSC00551_copy.jpg",
     },
     {
         quote: "Shining Yam is a hidden gem! From the moment I walked in, I knew I was in for a treat. The impeccable service and overall attention to detail created a memorable experience. I highly recommend it!",
-        name: "Martina Edelweist",
+        name: "Justin Brunner",
         designation: "Satisfied Customer",
         src: "images/industry-night-photography/DSC01039.jpg",
     },
+    {
+        quote: "Shining Yam is a hidden gem! From the moment I walked in, I knew I was in for a treat. The impeccable service and overall attention to detail created a memorable experience. I highly recommend it!",
+        name: "Joe Kormendi",
+        designation: "Satisfied Customer",
+        src: "images/industry-night-photography/DSC00464_copy.jpg",
+    }
 ];
-
 
 // control
 
