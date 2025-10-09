@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Industry Night Site</title>
 
+  <!-- icon to tab  -->
+  <link rel="icon" type="image/png" href="images/red_start.png">
+
   <!-- tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -15,6 +18,12 @@
   <!-- font awesome  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+  <!-- greesock  -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+
   <!-- style sheet  -->
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css">
@@ -22,36 +31,36 @@
 
 <body class="site">
   <!-- header section -->
-    <header class="head">
-      <h1 class="hidden">Industry Night Event</h1>
-      <div class="two-items sm-three-items md-three-items lg-three-items">
-        <!-- Logo Site Title -->
-        <div class="logo">
-          <a href="index.html">
-            <object data="images/primary-allwhite.svg" type="image/svg+xml"></object>
-            <span class="hidden">Industry Night</span>
-          </a>
-        </div>
-        <div class="nav-menu">
-          <!-- Hamburger Button -->
-          <button id="menu-btn" class="hamburger">
-            <!-- Hamburger Icon -->
-             <object data="images/svgs/industry-hamburger.svg" type="image/svg+xml" class="menuIcon"></object>
-          </button>
-
-          <!-- Navigation -->
-          <nav id="main-nav">
-            <h2 class="hidden">Navigation bar</h2>
-            <ul class="menu">
-              <li><a href="index.html" class="menu-item">Home</a></li>
-              <li><a href="portfolios.html" class="menu-item">Portfolio</a></li>
-            </ul>
-          </nav>
-        </div>
+  <header class="head">
+    <h1 class="hidden">Industry Night Event</h1>
+    <div class="two-items sm-three-items md-three-items lg-three-items">
+      <!-- Logo Site Title -->
+      <div class="logo">
+        <a href="index.html">
+          <object data="images/primary-allwhite.svg" type="image/svg+xml"></object>
+          <span class="hidden">Industry Night</span>
+        </a>
       </div>
-      <!-- Fanshawe Link -->
-      <a href="https://fanshawe.ca" target="_blank" class="fanshawe">fanshawe.ca</a>
-    </header>
+      <div class="nav-menu">
+        <!-- Hamburger Button -->
+        <button id="menu-btn" class="hamburger">
+          <!-- Hamburger Icon -->
+          <img src="images/industry-menu.svg" alt="hamburger menu" class="menuIcon">
+        </button>
+
+        <!-- Navigation -->
+        <nav id="main-nav">
+          <h2 class="hidden">Navigation bar</h2>
+          <ul class="menu">
+            <li><a href="index.html" class="menu-item">Home</a></li>
+            <li><a href="portfolios.html" class="menu-item">Portfolio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Fanshawe Link -->
+    <a href="https://fanshawe.ca" target="_blank" class="fanshawe">fanshawe.ca</a>
+  </header>
 
   <main class="main">
     <!-- portflio hero section  -->
@@ -75,60 +84,39 @@
     <hr class="horizontal-line">
     <!-- Portfolio student list  -->
     <section id="student-list">
-      <div class="two-items sm-three-items md-four-items lg-four-items">
-        <div class="student-card">
-          <h2>Josephine Muncaster</h2>
-          <p>Motion Designer</p>
-          <img src="images/industry_headshots/jo_headshot.png" alt="Josephine Muncaster">
-          <a href="#">View Portfolio</a>
-        </div>
-        <div class="student-card">
-          <h2>Amy Armstrong</h2>
-          <p> Designer</p>
-          <img src="images/industry_headshots/amy_headshot.png" alt="Amy Armstrong">
-          <a href="#">View Portfolio</a>
-        </div>
-        <div class="student-card">
-          <h2>Laila Seif</h2>
-          <p>Manager/Designer</p>
-          <img src="images/industry_headshots/laila_headshot.png" alt="Laila Seif">
-          <a href="#">View Portfolio</a>
-        </div>
-        <div class="student-card">
-          <h2>Zakia Sultana</h2>
-          <p>Developer</p>
-          <img src="images/industry_headshots/zakia_headshot.png" alt="Zakia Sultana">
-          <a href="#">View Portfolio</a>
-        </div>
+      <div id="students-container" class="two-items sm-three-items md-four-items lg-four-items student-card">
+        <h2>student-list</h2>
       </div>
     </section>
+
   </main>
 
   <!-- footer section  -->
-    <footer class="foot" id="foot">
-      <div class="one-item sm-one-item md-one-item lg-one-item">
-        <div>
-          <p>
-            <span>137 Dundas St,</span><br />
-            London, ON, Canada <br />
-            N6A 1G3
-          </p>
-          <p>
-            <span>Fanshawe College, IDP3</span><br />
-            &copy; 2026 all rights reserved.
-          </p>
-        </div>
-        <div>
-          <h2>Stay connected</h2>
-          <a href="https://www.facebook.com/FanshaweCollege/"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://x.com/fanshawecollege?lang=en"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/school/fanshawe-college/posts/?feedView=all"><i  class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.instagram.com/fanshawecollege/?hl=en"><i class="fab fa-instagram"></i></a>
-        </div>
+  <footer class="foot" id="foot">
+    <div class="one-item sm-one-item md-one-item lg-one-item">
+      <div>
+        <p>
+          <span>137 Dundas St,</span><br />
+          London, ON, Canada <br />
+          N6A 1G3
+        </p>
+        <p>
+          <span>Fanshawe College, IDP3</span><br />
+          &copy; 2026 all rights reserved.
+        </p>
       </div>
-    </footer>
+      <div>
+        <h2>Stay connected</h2>
+        <a href="https://www.facebook.com/FanshaweCollege/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/fanshawecollege?lang=en"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/school/fanshawe-college/posts/?feedView=all"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/fanshawecollege/?hl=en"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/portfolios_script.js"></script>
 </body>
 
 </html>
