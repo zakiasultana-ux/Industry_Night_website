@@ -2,7 +2,7 @@ console.log("welcome to the Industry Night website!");
 
 // greensock plug in 
 
-gsap.registerPlugin(ScrollTrigger,ScrollSmoother,ScrollToPlugin);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
 // variables
 
