@@ -91,6 +91,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    padding-top: 10px;
 }
 
 /* 03-a. Logo styles */
@@ -98,7 +99,6 @@ header {
 .logo object {
     height: 40px;
     width: auto;
-    margin: 10px 0;
     padding-left: 10px;
 }
 
@@ -517,7 +517,10 @@ input[type="range"]:focus::-moz-range-thumb {
 
 .testimonial-image {
     position: absolute;
+    top: 0;
+    left: 10%;
     width: 100%;
+    max-width: 400px;
     height: 100%;
     object-fit: cover;
     border-radius: 1.5rem;
@@ -885,7 +888,7 @@ footer a {
 /* 01. portfolio style */
 
 #portfolio1 h2 {
-    font-size: 1.78em;
+    font-size: 2em;
     font-weight: 600;
     color: var(--red-color);
 }
@@ -908,6 +911,7 @@ footer a {
 }
 
 .protfolio-button button {
+    text-transform: uppercase;
     flex: 1 1 0;
     width: 100%;
     box-sizing: border-box;
@@ -916,7 +920,7 @@ footer a {
     border: 2px solid var(--dark-gray-color);
     border-radius: 10px;
     padding: 5px;
-    font-size: 0.6em;
+    font-size: 0.75em;
 }
 
 .protfolio-button button:hover {
@@ -1075,19 +1079,22 @@ footer a {
     }
 
     #portfolio1 h2 {
-        font-size: 4.8em;
+        font-size: 4em;
         line-height: 1;
+        margin: 20px 0 20px 0;
     }
 
     #portfolio1 p {
-        font-size: 2.8em;
+        font-size: 2em;
         line-height: 1;
+        margin-bottom: 15px;
     }
 
     .protfolio-button button {
         border-radius: 20px;
         padding: 10px;
-        font-size: 1.6em;
+        font-size: 1em;
     }
+
 
 }
